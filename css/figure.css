@@ -1,0 +1,12 @@
+img {
+    width: 30%;
+}
+
+figure {
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+figcaption {
+    background-color: lightcoral;
+}

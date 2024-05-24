@@ -1,0 +1,63 @@
+* {
+    margin:0;
+    padding: 0;
+
+    /* inkludiert padding+border in die width  */
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: beige; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: hsl(208, 59%, 52%);
+    padding: 11px;
+}
+
+h1 {
+    background-color: lightblue;
+    margin-bottom:40px;
+    margin:10px 5px;
+}
+
+
+
+.klassenname div {
+    background-color:hsl(208, 59%, 82%); 
+    padding:3px;
+}
+
+.border {
+    border-top-style: dashed;
+    border-right-style:double;
+    border-bottom-style:dotted;
+    border-left-style:solid;
+    /* border:2px solid red; */
+}
+
+.flexen {
+    height: 80px;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:4px;
+}
+
+.klassenname div {
+    flex: 1;
+}
+
+
+
+.klassenname .eins {
+    flex: 1;
+}
+
+.klassenname .zwei {
+    flex: 2;
+}
+
+img {
+    max-width:100%;
+    height: auto;
+    display: block;
+}

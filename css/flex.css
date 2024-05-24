@@ -1,0 +1,23 @@
+.flex {
+    background-color: lightskyblue;
+    display: flex;
+}
+
+.flex div {
+    padding: 15px;
+    background-color: limegreen;
+    border: 1px solid;
+    font-size: x-large;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 170px;
+    flex: 0 1 170px;
+    flex: 1;
+}
+
+.flex .item2 {
+    background-color: rgb(178, 184, 58);
+    flex: 1 1 100px;
+    flex: 3;
+}
