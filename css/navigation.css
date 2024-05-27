@@ -1,0 +1,32 @@
+ul{
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    list-style: none;     /*remove list name*/
+
+}
+
+.mainnav{
+    display: flex;
+    /* justify-content: flex-end; */
+    gap: 7px;
+}
+.mainnav li{
+    background-color: lightblue;
+    flex: 1;
+}
+
+/* link = standardaussehen
+visted = wenn der link ausgewäalt wurde 
+hover = wenn mit der maus über den link gefahren wird 
+focus = wen der link ausgewält geklikt  */
+.mainnav a:link, .mainnav a:visited {
+    display: block;
+    background-color: rgb(169, 169, 144);
+    text-decoration: none;
+}
+.mainnav a:hover, .mainnav a :focus {
+    background-color: rgb(37, 60, 60);
+    color: beige;
+
+}
