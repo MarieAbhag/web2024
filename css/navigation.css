@@ -6,6 +6,25 @@ ul{
          /*remove list name*/
 
 }
+li{
+    display: list-item;
+    
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: beige;
+    text-decoration: none;
+
+}
 
 .mainnav{
     display: flex;
@@ -13,7 +32,7 @@ ul{
     gap: 7px;
 }
 .mainnav li{
-    background-color: lightblue;
+    background-color: rgb(72, 118, 133);
     /* flex: 1; */
 }
 
@@ -30,4 +49,40 @@ focus = wen der link ausgewält geklikt  */
     background-color: rgb(37, 60, 60);
     color: beige;
 
+}
+.secondnav{
+    display: flex;
+    gap: 7px;
+}
+/* .drei{
+    display: block;
+    gap: 7px;
+
+} */
+.footernav a :link, .footernav a :visited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 142, 105);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+.footernav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+}
+.footernav li{
+    background-color: rgb(225, 227, 154);
+    flex: 1;
+    width: 100%;
+    height: 100px;
+    
+   
+}
+
+.footernav a:hover, .footernav a :focus {
+    background-color: rgb(37, 60, 60);
+    color: beige;
 }
