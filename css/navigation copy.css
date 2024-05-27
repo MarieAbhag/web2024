@@ -1,0 +1,95 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;   /*entfernen der listenpunkte*/
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height: 60px;
+    background-color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.mainnav {
+    display:flex;
+    /* justify-content: flex-end; */
+    gap:7px;
+}
+
+.mainnav li {
+    background-color: lightblue;
+    flex:1;
+}
+
+/* standrad-aussehen und falls der link besucht wurde 
+sind glich */
+/* LoVeHAte-reihenfolge */
+/* link    = standardaussehen
+visited = wenn der link ausgewählt wurde
+hover   = wenn mit der maus über den link gefahren wird 
+focus   = wenn der link ausgewählt/geklickt wurde */
+
+.mainnav a:link, .mainnav a:visited {
+    display:block;
+    background-color: yellow;
+    text-decoration:none;   /*entfernen des unterstriches*/
+}
+
+/* :hover = pseudoKlasse */
+.mainnav a:hover, .mainnav a:focus {
+    background-color: hsl(195, 53%, 29%);
+    color: hsl(195, 53%, 99%);
+}
+
+header, main {
+    /* height: 100px; */
+    margin-bottom: 20px;
+}
+
+/* ---------------------footernav-------------------------------- */
+
+.footernav {
+    display:flex;
+    /* justify-content: flex-end; */
+    gap:7px;
+}
+
+.footernav li {
+    
+    flex:1;
+    height: 60px;
+}
+
+.footernav a:link, .footernav a:visited {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(195, 53%, 69%);
+    text-decoration:none;   /*entfernen des unterstriches*/
+    width: 100%;
+    height: 100%;
+}
+
+/* :hover = pseudoKlasse */
+.footernav a:hover, .footernav a:focus {
+    background-color: hsl(195, 53%, 29%);
+    color: hsl(195, 53%, 99%);
+}
