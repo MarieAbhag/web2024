@@ -5,7 +5,10 @@ body{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    /* flex-wrap: wrap; */
+    /* gap: 20px; */
+    justify-content: space-around;
+    
 }
 header{
     background-color: #333;
