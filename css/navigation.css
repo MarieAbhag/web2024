@@ -1,19 +1,20 @@
 ul{
-    background-color: blanchedalmond;
+    background-color: rgb(219, 219, 219);
     margin: 0;
     padding: 0;
-    list-style: none;     /*remove list name*/
+    list-style: none;
+         /*remove list name*/
 
 }
 
 .mainnav{
     display: flex;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     gap: 7px;
 }
 .mainnav li{
     background-color: lightblue;
-    flex: 1;
+    /* flex: 1; */
 }
 
 /* link = standardaussehen
@@ -22,7 +23,7 @@ hover = wenn mit der maus über den link gefahren wird
 focus = wen der link ausgewält geklikt  */
 .mainnav a:link, .mainnav a:visited {
     display: block;
-    background-color: rgb(169, 169, 144);
+    background-color: rgb(195, 195, 192);
     text-decoration: none;
 }
 .mainnav a:hover, .mainnav a :focus {
