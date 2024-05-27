@@ -1,8 +1,9 @@
 body{
-    background-color: rgb(237, 244, 248);
+    background-color:#20374be3;
+
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -18,14 +19,27 @@ body{
 header{
     background-color: #333;
     color: white;
-    padding: 5px;
+    padding: 1px;
     display: flex;
     justify-self: center;
     align-items:center;
     justify-content: space-between;
     width: 100%;
+    
 
 
+}
+
+header :hover{
+    color: #fab117;
+}
+h1{
+    color: #fab117;
+    background-color: #d6f5ef;
+}
+p{
+    color: #fff;
+    font-size: large;
 }
 nav ul{
     list-style-type: none;
@@ -70,6 +84,8 @@ footer{
     height: 50px;
     color: white;
     width: 100%;
+    height: auto;
+    /* padding: 20px; */
     display: flex;
     justify-content: center;
     align-content: center;
@@ -80,9 +96,12 @@ footer{
 
 }
 footer img{
-    width: 50px;
+    width: 10%;
     height: auto;
-    padding: 15px;
+    margin-left: 45%;
+
+   
+    /* padding: 15px; */
     
 }
 /* .logo img{
@@ -251,7 +270,9 @@ body {
 }
 
 .flexen {
+    background-color: #fab117;
     display: flex;
+    padding: 2px;
     gap: 7px;
 
 }
@@ -262,6 +283,7 @@ body {
 }
 
 .bild {
+    background-color: #fab117;
     flex: 50%;
     border: 2px solid silver;
 }
@@ -269,7 +291,14 @@ body {
 .text {
     /* flex: 50%; */
     flex: 2;
+    background-color: #deeaea;
+    padding: 5px;
+    color: #384d5f;
 
+}
+.text p{
+    color: #333;
+    background-color: #f8f6f0;
 }
 
 /* -------------section zweiartikel------------ */
@@ -454,7 +483,7 @@ header1 {
 }
 
 .p2 {
-    background-color: rgb(90, 108, 131);
+    background-color: rgb(255, 92, 4);
 }
 
 .p3 {
@@ -471,9 +500,11 @@ button {
 }
 
 video {
+    background-color: #fab2172e;
     width: 100vw;
     height: 50vw;
     display: flex;
     margin: 0;
     justify-content: center;
+    padding: 10px;
 }
