@@ -19,7 +19,12 @@ header{
 nav ul{
     list-style-type: none;
     padding: 0;
-   flex ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+    
 
 }
 nav ul li{
