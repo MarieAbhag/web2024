@@ -59,7 +59,7 @@ focus   = wenn der link ausgewählt/geklickt wurde */
     color: hsl(195, 53%, 99%);
 }
 
-header, main {
+header1, main {
     /* height: 100px; */
     margin-bottom: 20px;
 }
