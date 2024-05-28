@@ -13,6 +13,8 @@ body{
     /* flex-wrap: wrap; */
     /* gap: 20px; */
     /* justify-content: space-around; */
+    box-sizing: border-box;
+
   
     
 }
@@ -113,7 +115,7 @@ footer img{
 display:flex;
 justify-content: center;
 align-items: center;
-width:60px;
+width:70px;
 height: 60px;
 background-color: aliceblue;
 text-decoration: none;
@@ -507,4 +509,98 @@ video {
     margin: 0;
     justify-content: center;
     padding: 10px;
+}
+/* ----------------------Contact----------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600&family=Rude:wght@400;600;700&display=swap");
+.form-container{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* .form-container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#60000082;
+    
+} */
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1px;
+    background: #5e89695f;
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 3px 4px #c36a29;
+    
+}
+
+/* .logo-contact{
+    background: url("img/logo1.jpeg") no-repeat center;
+    background-size: cover; 
+    min-height: 100vh;
+    position: relative;
+} */
+.wrapper h2{
+    font-size: 3rem;
+    color: #f8f6f0;
+    padding: 2rem 1rem;
+    position: relative;
+}
+.wrapper h2::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    top: 100px;
+    left: 20px;
+    width: 80%;
+    background: #be6b29;
+}
+.form-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+.form-section ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+.form-details .icons{
+    background-color:#be6b29;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border-radius: 50%;
+
+
+}
+.form-details li {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: #d6f5ef;
+    margin: 0.8rem 0;
+
+}
+.form-details li i{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+
+
+} 
+
+.form-details{
+    color: #be6b29;
+}
+.form-groups{
+    position: relative;
 }
