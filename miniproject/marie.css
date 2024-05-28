@@ -601,6 +601,28 @@ video {
 .form-details{
     color: #be6b29;
 }
-.form-groups{
+.from-groups{
     position: relative;
 }
+.from-groups .form-control{
+    width: 100%;
+    outline: none;
+    border: 1px solid white;
+    padding: 0,8rem;
+    margin: 1rem 0;
+    resize: none;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+.from-group span{
+    position:absolute;
+    top: 0,8rem;
+    left: 0;
+    padding: 1rem;
+    pointer-events: none;
+    font-size: 0.8rem;
+    color: #d6f5ef;
+    text-transform: uppercase;
+}
+/* .from-group .form-control:valid  */
