@@ -144,13 +144,14 @@ margin:  0 20px;
 
 .article-container {
     display: flex;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 80px;
+    background-color: #dbdbdb78;
+    box-shadow: 0 4px 8px rgb(197, 82, 24);
+    border-radius: 30px;
     overflow: hidden;
     max-width:1500px;
     height: 650px;
-    gap: 20px;
+    gap: 1px;
+    border: #333;
    
    
 }
@@ -162,8 +163,8 @@ margin:  0 20px;
 }
 
 .article-text {
-    padding: 20px;
-    width: 50%;
+    padding: 10px;
+    width: 100%;
 }
 
 .article-text h1 {
@@ -172,7 +173,9 @@ margin:  0 20px;
 
 .article-text p {
     line-height: 1.6;
-    color: #333;
+    color: #04021c;
+    padding: 10px;
+
 }
 
 
@@ -181,7 +184,7 @@ margin:  0 20px;
     width: 100%;
     background-color: rgb(223, 235, 136);
     display: flex;
-    gap: 7px;
+    gap: 10px;
 
 }
 
@@ -280,7 +283,6 @@ body {
     background-color: #c9c8c675;
     display: flex;
     padding: 2px;
-    gap: 7px;
     border-radius: 20px;
 
 }
@@ -665,3 +667,65 @@ input, textarea{
     border: 3px solid #222120;
     color: #be6b29;
 }
+/* '_____________________________29052024-----------------------------------------------------------------------' */
+
+.box{
+    /* float: right; */
+    width: 20vh;
+    padding: 15px;
+    height: 50vh;
+    gap: 20px;
+    border: 2px solid silver;
+    justify-items: center;
+    align-items: center;
+}
+
+.article-text::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+.dreiboxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid silver;
+    gap: 20px;
+    padding: 10px;
+   
+}
+#btn{
+    display: flex;
+    flex-direction:row;
+    justify-items:center ;
+    align-items: center;
+    color: #20374be3;
+    max-width: 100%;
+    
+    
+   
+}
+button:hover{
+    cursor: pointer;
+    background-color: #c36a29;
+}
+   h1 {
+    display: flex;
+    flex: 1;
+    justify-content:center ;
+    align-items: center;
+    color: #27455f;
+}
+.strong{
+
+    font-size: xx-large;
+    color: red;
+}
+
