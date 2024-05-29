@@ -19,7 +19,7 @@ body{
 
 
 header{
-    background-color: #333;
+    background-color: hwb(221 10% 79%);
     color: white;
     /* padding: 1px; */
     /* display: flex;
@@ -39,15 +39,21 @@ header{
     /* transition: 0.5s; */
     z-index: 99;
 }
-
+ h4{
+    font-size: large;
+    border: 2px;
+    text-decoration: underline;
+    
+}
 
 header :hover{
     color: #fab117;
     cursor: pointer;
 }
 h1{
-    color: #fab117;
-    background-color: #d6f5ef;
+    color: #a4191ece;
+    background-color: hsla(163, 5%, 70%, 0.74);
+    font-size: x-large;
 }
 p{
     color: #fff;
@@ -140,16 +146,18 @@ margin:  0 20px;
     display: flex;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 80px;
     overflow: hidden;
-    max-width: 800px;
-    height: auto;
+    max-width:1500px;
+    height: 650px;
+    gap: 20px;
    
    
 }
 
 .article-image {
-    width: 50%;
+    display: flex;
+    flex: 1;
     object-fit: cover;
 }
 
@@ -178,7 +186,7 @@ margin:  0 20px;
 }
 
 /* ----------------- fiftyfifty------------------------ */
-.fiftyfifty {
+/* .fiftyfifty {
     margin-top: 10px;
     width: 100%;
     background-color: rgb(223, 235, 136);
@@ -204,7 +212,7 @@ margin:  0 20px;
 
 /* --------------einszuzwei------------- */
 
-.einzuzwei {
+/* .einzuzwei {
 
     margin-top: 10px;
     width: 100%;
@@ -228,7 +236,7 @@ margin:  0 20px;
     display: flex;
     gap: 50px;
 
-} */
+}  */
 
 /* '-------------------------------------------------------' */
 box-sizing {
@@ -269,31 +277,43 @@ body {
 }
 
 .flexen {
-    background-color: #fab117;
+    background-color: #c9c8c675;
     display: flex;
     padding: 2px;
     gap: 7px;
+    border-radius: 20px;
 
 }
 
 .bild img {
     width: 100%;
     height: auto;
+    border: 2px solid silver;
+    border-radius: 20px;
+    flex: 1;
 }
 
-.bild {
+/* .bild {
     background-color: #fab117;
     flex: 50%;
     border: 2px solid silver;
-}
+} */
 
 .text {
     /* flex: 50%; */
-    flex: 2;
+    
     background-color: #deeaea;
     padding: 5px;
-    color: #384d5f;
+    color: #27455f;
+    padding: 20px;
+    border-radius: 20px;
+   
 
+}
+.text  :hover{
+    cursor: pointer;
+    background-color:#be6b29;
+    
 }
 .text p{
     color: #333;
@@ -356,7 +376,7 @@ body {
     height: 300px;
     border: 2px solid silver;
     display: flex;
-    gap: 20px;
+    gap: 200px;
     justify-content: center;
     align-items: flex-end;
     /*vertikalAchse*/
@@ -378,7 +398,7 @@ body {
     gap: 4px;
 }
 
-.klassenname div {
+/* .klassenname div {
     flex: 1;
 }
 
@@ -394,7 +414,7 @@ img {
     width: 100%;
     height: auto;
     display: block;
-}
+} */
 
 /* ------------24052024---------- */
 footer {
@@ -499,13 +519,16 @@ button {
 }
 
 video {
-    background-color: #fab2172e;
+    background-color: #ea7d00;
     width: 100vw;
-    height: 50vw;
+    height: 45vw;
     display: flex;
     margin: 0;
     justify-content: center;
     padding: 10px;
+}
+video :hover{
+    cursor: pointer;
 }
 /* ----------------------Contact----------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600&family=Rude:wght@400;600;700&display=swap");
