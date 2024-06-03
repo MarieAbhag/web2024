@@ -1,0 +1,36 @@
+.vierboxs{
+    width: 550px;
+    border: 2px solid black;
+    margin: 50px auto;
+  
+ }
+
+
+
+ .box{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .green{
+     background-color: rgb(21, 115, 21);
+     position: absolute;
+     right: 200px;
+     
+
+  
+ }
+ .purple{
+     background-color: rgb(50, 17, 37);
+   
+ }
+ .blue{
+     background-color: blue;
+}
+  
+ .red{
+     background-color: red;
+ }
