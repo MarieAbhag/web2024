@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 1500px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.flex{
+    
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+.flex li{
+    background-color: bisque;
+    
+}
+.mainHeader{
+    position: fixed;
+    top: 0;
+    background-color: aqua;
+    width: 100%;
+    z-index: 9999;
+}
+section{
+    background-color: aquamarine;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fotografie{
+    background-image: url(../img/_68161c19-03bf-4c63-8879-08f7c27d6d61.jpg);
+}
+.soft{
+    padding: 11px;
+    width: 500px;
+    height: 50%;
+    background-color: rgba(177, 189, 185, 0.484);
+}
+#welt{
+    background-image: url(../img/_7229aec8-22d1-435f-b7bf-dd929730b872.jpg);
+}
+#natur{
+    background-image: url(../img/_af84991d-44e6-4a49-a7b7-7c69c209e09b.jpg);
+}

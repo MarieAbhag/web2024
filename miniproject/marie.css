@@ -1,6 +1,5 @@
 body{
     background-color:#20374be3;
-
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 100px 40px 10px;
@@ -101,7 +100,7 @@ footer{
     color: white;
     width: 100%;
     height: auto;
-    /* padding: 20px; */
+    
     display: flex;
     justify-content: center;
     align-content: center;
