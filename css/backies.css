@@ -79,3 +79,32 @@
     left:50px;
     z-index: 50;
 }
+.repeatingLiner{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: repeating-linear-gradient(
+        -45deg,
+        hsla(215, 52%, 30%, 0.853)0%,
+        hsla(129, 48%, 30%, 0.853)15%,
+        hsla(215, 52%, 30%, 0.853)35%,
+        hsla(129, 48%, 30%, 0.853)55%,
+    );
+
+}
+
+@keyframes dialog {
+    
+    
+}
+.innen{
+    width:1800px;
+    height: 1013px;
+    position: absolute;
+    left: -100px;
+    top: 0;
+    background-image: url(../img/location.png);
+    background-position: left top;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
