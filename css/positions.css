@@ -1,6 +1,13 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 1000px;;
+    height: 1000px;
 }
 
 .oben {
@@ -25,9 +32,13 @@ body {
     height:60px;
     background-color: yellow;
     position:fixed;
-    width: 100%;
+    /* width: 100%; */
+    
+    margin:auto;
+    width: 95%;
+    left:2.5%;
     top:0;
-    z-index:99;
+    z-index:100;
 }
 
 
@@ -40,12 +51,12 @@ body {
 
 .kind {
     border:1px solid rgb(73, 80, 217);
-   height:60px;
+    height:60px;
     width: 60px;
     background-color: aqua;
     position: absolute;         /*im verhältnis zum elternElement*/
-    left: -30px; 
-    top: -30px;  
+    left: -30px;
+    top: -30px;
 }
 
 
@@ -59,7 +70,7 @@ ul {
 
 .firstLevel {
     display:flex;
-    gap: 10px;
+    gap:5px;
 }
 
 .firstLevel li {
@@ -72,8 +83,7 @@ ul {
    
     position:absolute;
     top:50px;
-    display:none; 
-    gap: 10px;      /*die ul verschwindet */
+    display:none;       /*die ul verschwindet */
 }
 
 .secondLevel li {
@@ -81,22 +91,5 @@ ul {
 }
 
 .firstLevel li:hover .secondLevel {
-    display:block;  
-    cursor: pointer;    /* die ul erscheint wieder */
-}
-.vierboxes{
-   width: 120px;
-   height: 120px;
-}
-.purple{
-    background-color: blueviolet;
-}
-.green{
-    background-color: rgb(48, 92, 53);
-}
-.blue{
-    background-color: blue;
-}
-.red{
-    background-color: red;
+    display:block;      /* die ul erscheint wieder */
 }
