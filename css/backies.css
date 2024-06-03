@@ -1,0 +1,55 @@
+/* ......................multiple background-------------------- */
+
+
+.twoImages{
+    border: 2px solid black;
+    height: 50vh;
+    background-image: url(../img/location.png), url(../img/_4662d7a2-ea5b-4b30-8669-5653d23bfb4b.jpg);
+    background-position: -20px 100px, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%, contain;
+}
+.verlauf{
+    height: 10vh;
+    /* background-image: linear-gradient(to bottom right,orange,red); */
+    background-image: linear-gradient(120deg,rgb(71, 38, 161),rgb(191, 135, 135));
+}
+.blendmode{
+    height: 100vh;
+    background-image: linear-gradient(120deg,rgb(71, 38, 161),rgb(191, 135, 135)),
+    url(../img/logo.png);
+    background-repeat: repeat,no-repeat;
+    background-size: 70%,100% ;
+    /* background-position: center; */
+    background-blend-mode: lighten;
+
+    
+}
+.blendmode2{
+    height: 100px;
+    background-image: linear-gradient(120deg,rgb(120, 130, 150),red,green), url(../img/_68161c19-03bf-4c63-8879-08f7c27d6d61.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 70%,100%;
+    background-blend-mode: lighten;
+}
+.backdrop{
+    background-image: url(../img/_68161c19-03bf-4c63-8879-08f7c27d6d61.jpg);
+    background-repeat: repeat-x;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.soft{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-image: linear-gradient(140deg,rgba(193, 193, 120, 0.554)40%,rgba(255, 0, 0, 0.493)70%);
+    /* opacity: 0,2; */
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: contrast(180%) blur(2px);
+    backdrop-filter: contrast(180%) blur(2px);
+ 
+
+}
