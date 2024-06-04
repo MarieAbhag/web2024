@@ -11,7 +11,7 @@
     left: 0;
     z-index:1;
     animation-name: fade;
-    animation-duration: 12s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     width:100%;
     height: auto;
