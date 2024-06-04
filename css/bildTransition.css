@@ -1,0 +1,71 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.papa {
+    width:300px;
+    height: 150px;
+    border:2px dotted silver;
+    position: relative;
+    overflow: hidden;       /*überfließender inhalt wird beschnitten*/
+}
+
+.skalier {
+    position: absolute;
+    top:0;
+    z-index:1;
+    transform:scale(1);
+    transition: all 2.3s ease-in-out;
+}
+
+.text {
+    position: absolute;
+    top:20px;
+    right:120px;
+    bottom:0;
+    left:20px;
+    font-size:25px;
+    padding:11px;
+    opacity:0;
+    transition:all 0.75s linear 0.5s;
+    z-index:2;
+    background-color: rgba(248, 244, 242, 0.458);
+    -webkit-backdrop-filter: sepia(94%) grayscale(80%);
+    backdrop-filter: sepia(90%) grayscale(80%);
+
+}
+
+/* wenn papa gehovert wird die class skalier verändert */
+.papa:hover .skalier {
+    /* transform:scale(1.25); */
+    /* transform:translateY(-100px); */
+    /* opacity:0.2; */
+    /* filter: grayscale(80%); */
+    filter: hue-rotate(90deg);
+   opacity:0;
+}
+
+.papa:hover .text {
+    opacity:1;
+}
+
+
+/* --------------------objectPosition--------------------- */
+
+.stage {
+    width:300px;
+    height: 300px;
+}
+
+.stage img {
+    width:300px;
+    height: 300px;
+    object-fit:cover;
+    object-position: 0%;
+    transition: all 3.5s;
+}
+
+.stage img:hover {
+    object-position: 100%;
+}

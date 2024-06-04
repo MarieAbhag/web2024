@@ -1,0 +1,43 @@
+.stage {
+    width: 433px;
+    height: 290px;
+    overflow: hidden;
+    position:relative;
+}
+
+.ani {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+    animation-name: fade;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    width:100%;
+    height: auto;
+}
+
+/* 100 / 12 => 8.3333% => 1 sekunde
+/* 100 / 9 => 11.11% => 1 sekunde
+
+in einer sekunde einblenden
++ 2 sekunden anzeigen und dann ausblenden */
+
+/* @keyframes fade {
+    0% { opacity:0.4; }
+    8.3333% { opacity:1; }
+    16.6666% { opacity:1; }
+    100% { opacity:0.4; }
+} */
+
+
+@keyframes fade {
+    0% { opacity:0.4; }
+    25% { opacity:1; }
+    50% { opacity:1; }
+    100% { opacity:0.4; }
+}
+
+.stage img:nth-child(1) { animation-delay: 0s;}
+.stage img:nth-child(2) { animation-delay: 6s;}
+.stage img:nth-child(3) { animation-delay: 10s;}
