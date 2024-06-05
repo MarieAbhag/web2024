@@ -43,7 +43,7 @@ in einer sekunde einblenden
 .stage img:nth-child(2) { animation-delay: 6s;}
 .stage img:nth-child(3) { animation-delay: 10s;}
 /* ....................parent child ....................... */
-.parennt{
+.parent{
     background-color: blue;
     height: 400px;
     width: 400px ;
@@ -53,4 +53,20 @@ in einer sekunde einblenden
     background-color: brown;
     height: 50%;
     width: 50%;
+    
+    /* position: absolute;
+    animation: alternate 5s infinite; */
+
+
 }
+.parent:hover .child{
+    background-color: green;
+    transform: translateX(100%);
+    
+
+}
+/* @keyframes square {
+    from{top: 0px;}
+    to{bottom: 30px;}
+    
+} */
