@@ -1,0 +1,19 @@
+#banner {
+    position: relative;
+    height: 128px;
+    background-color: lightblue;
+}
+
+.ball {
+    position: absolute;
+    animation: rollerball 4s alternate infinite paused;
+}
+
+@keyframes rollerball {
+    from { transform:translateX(0) rotate(0deg); }
+    to   { transform:translateX(300%) rotate(720deg);}
+}
+
+/* animationPlayState ist der status der ani 
+running = die ani läuft ab 
+paused  = die ani pausiert */

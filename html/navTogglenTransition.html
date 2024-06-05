@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<title>nav togglen</title>
+		<link href="../css/navTogglenTransition.css" rel="stylesheet">
+		<style></style>
+
+
+	</head>
+
+
+
+	<body>
+		<header>
+			<div class="icon">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+
+			<nav>
+				<ul class="toggle">
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		
+
+		<script>
+			let icon = document.querySelector('.icon');
+			icon.addEventListener('click',function(){
+				document.querySelector('.toggle').classList.toggle('slowdown');
+				this.classList.toggle('checked');
+				// this ist das icon selbst
+			});
+		</script>
+	</body>
+
+
+
+</html>
+

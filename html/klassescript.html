@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<title>klasse per script</title>
+		<!-- <link href="../css/klassescript.css" rel="stylesheet"> -->
+		<style>
+			.myStyle{
+				background-color: rgb(60, 92, 121);
+				padding: 16px;
+			}
+		</style>
+
+
+	</head>
+
+
+
+	<body>
+		<!-- onclick=wenn button geklickt wird -->
+		<button onclick="myFunction()">Klick mich</button>
+		<button onclick="entfernen()">Klick entfernen</button>
+		<button onclick="toggeln()">Klick toggeln</button>
+		<div id="myDiv">ich bin myDiv</div>
+
+		<script>
+			function myFunction() {
+				const list = document.getElementById('myDiv').classList;
+				list.add('myStyle');
+			}
+
+				function entfernen(){
+				const list = document.getElementById('myDiv').classList;
+				list.remove('myStyle');
+			}
+			function toggeln(){
+				const list = document.getElementById('myDiv').classList;
+				list.toggle('myStyle');
+			}
+			
+		</script>
+
+	</body>
+
+
+
+</html>
+
