@@ -3,19 +3,19 @@
 
 //den banner auswählen
 //und in der variablen 'banner' speichern
-let banner = document.querySelector('#banner');
+let b = document.querySelector('#banner');
 
 
 //touchstart für mobile
-banner.onmouseover =
-banner.ontouchstart = function(evt) {
+b.onmouseover =
+b.ontouchstart = function() {
     this.children[0].style.animationPlayState = 'running';
 }
 
 
 //touchend für mobile
 //bei mouseout pausiere die ani 
-banner.onmouseout =
-banner.ontouchend = function(evt) {
+b.onmouseout =
+b.ontouchend = function() {
     this.children[0].style.animationPlayState = 'paused';
 }
