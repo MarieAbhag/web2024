@@ -1,0 +1,46 @@
+header{
+    margin-bottom: 11px;
+    border: 1px solid silver;
+    padding: 7px;
+}
+.logo{
+    width: 55px;
+    height: 55px;
+    background-color: hsl(209, 26%, 34%);
+}
+
+#mainHeader {
+    display: flex;
+    justify-content: space-between;
+}
+/* -------------------burger -------------------- */
+.icon {
+    background-color:  hsl(193, 43%, 33%);
+    width: 75px;
+    height: 55px;
+    border-radius: 5px;
+    position: relative;
+}
+.line{
+    background-color:  hsl(193, 43%, 83%);
+    position: absolute;
+    left: 10px;
+    height: 4px;
+    width: 55px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.line:nth-child(1) {top: 12px;}
+.line:nth-child(2) {top: 24px;}
+.line:nth-child(3) {top:36px;}
+
+.icon.checked .line:nth-child(1) {
+    transform: translateY(12px) rotate(-45deg);
+}
+.icon.checked .line:nth-child(2) {
+    opacity: 0;
+}
+.icon.checked .line:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg)
+}
