@@ -1,0 +1,26 @@
+div {
+    border:2px solid silver;
+    padding: 7px;
+}
+
+.flex {
+    display:flex;
+    flex-wrap: wrap;    /*erlaubt in eine neue zeile zu springen*/
+}
+
+/* bis zu einer breit von 400px */
+@media(max-width:400px) {
+    /* .links,.rechts {
+        width: 100%;
+    } */
+
+    .flex {
+        flex-direction: column;
+    }
+}
+
+@media(min-width:200px) and (max-width:400px) and (orientation:portrait){
+    .links {
+        background-color: aqua;
+    }
+}

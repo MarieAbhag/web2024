@@ -49,3 +49,22 @@
     opacity:1;
     transform: translateX(10px);
 }
+
+.blau {
+    font-size:24px;
+    color:blue;
+}
+
+/* .mainNav {
+    display:none;
+} */
+
+/* .mainNav.sichtbar {
+    display:block;
+} */
+
+@media(min-width:500px) {
+   
+
+
+}
