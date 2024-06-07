@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>hintergrundBilder</title>
+		<!-- <link href="../css/style.css" rel="stylesheet"> -->
+		<style>
+			div {
+				border:1px solid;
+				width:300px;
+				height: 300px;
+				/* background-image: url(../img/_DSF4856_FHD_500pxQuad.jpg),linear-gradient(to bottom ,transparent, hsla(0, 100%, 50%, 0.65) );
+				background-repeat: no-repeat,repeat;
+				 */
+				background-image: linear-gradient(rgba(255, 166, 0, 0.568), rgba(255, 0, 0, 0.701) ),url(../img/_DSF4856_FHD_500pxQuad.jpg);
+				background-repeat: repeat,no-repeat;
+				background-position:center;
+				
+				/* -webkit-background-blend-mode:hue;
+				background-blend-mode:hue; */
+				position:relative;
+				/* display:flex;
+				justify-content: center;
+				align-items: center; */
+			}
+
+			p {
+				background-color: aliceblue;
+				position: absolute;
+				top:125px;
+				left:88px;
+				z-index:-1;
+			}
+
+			div:hover p {
+				z-index:10;
+			}
+
+			/* @media(max-width:500px) {
+				div {
+					background-image: url(../img/_DSF4856_FHD_1000px.jpg);
+				}
+				
+			} */
+		</style>
+
+
+	</head>
+
+
+
+	<body>
+		<div>
+			<p>sonne sonne sonne</p>
+		</div>
+	</body>
+
+
+
+</html>
+

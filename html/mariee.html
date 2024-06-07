@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>dokumententitel</title>
+		<link href="../css/navi.css" rel="stylesheet">
+		<style></style>
+
+
+	</head>
+
+
+
+	<body>
+		<div class="burger">burger</div>
+		<nav class="mainNav">
+			<ul class="flexi">
+				<li><a href="#">link</a></li>
+				<li><a href="#">link</a></li>
+				<li><a href="#">link</a></li>
+				<li><a href="#">link</a></li>
+			</ul>
+		</nav>
+
+		<script>
+			let icon = document.querySelector('.burger');
+			icon.addEventListener('click',function(){
+				document.querySelector('.mainNav').classList.toggle('sichtbar');
+			});
+		</script>
+	</body>
+
+
+
+</html>
+
