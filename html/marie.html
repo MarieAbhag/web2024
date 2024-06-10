@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>bilder mit x wert</title>
+		<!-- <link href="../css/style.css" rel="stylesheet"> -->
+		<style>
+			img {
+			max-width: 100%;
+			height: auto;
+			}
+			.firstSection article {
+			border:1px solid hsl(209, 26%, 34%);
+			/* height: 200px; */
+			margin-bottom: 7px;
+			}
+			.bild {
+			height: 200px;
+			overflow-y: hidden;
+			}
+			section {
+			padding: 7px;
+			border:1px solid silver;
+			}
+
+
+						
+			@media(min-width:660px) {
+				.firstSection {
+					display: flex;
+					gap:7px;
+				}
+
+				.firstSection article {
+					flex:1;
+				}
+
+				.icon { display: none; }
+
+				}
+			/* img {
+				width: 50%;
+			}
+			.picturce{
+				display: flex;
+				
+			}
+						
+			@media(min-width:20px) {
+				.picturce {
+					display: flex;
+					gap:7px;
+					}
+			}
+			.picturce {
+			flex:1;
+			} */
+
+		</style>
+
+
+	</head>
+
+
+
+	<body>
+
+		<main>
+			<section class="firstSection">
+				<article class="links">
+					<div class="bild">
+						<img src="../img/_a448b3aa-5af4-458b-b29f-2cce620546d2.jpg" alt="">
+					</div>
+					<div class="text">
+						<h3>die sonne scheint</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+					</div>
+				</article>
+
+				<article class="rechts">
+					<div class="bild">
+						<img src="../img/dord.png" alt="">
+					</div>
+					<div class="text">
+						<h3>die sonne scheint</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+					</div>
+				</article>
+			</section>
+		</main>
+
+
+
+		<!-- <div class="picture">
+			<article>
+				<img src="../img/_DSF4856_FHD_500px.jpg" 
+				srcset="../img/_DSF4856_FHD_500px.jpg 1x,
+						../img/_DSF4856_FHD_1000px.jpg 2x"
+				alt="">
+		</article>
+		</div> -->
+	</body>
+</html>
