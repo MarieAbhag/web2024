@@ -11,7 +11,7 @@ h1,h3 {
 }
 h3 {
     font-size:1.55rem;
-    color:var(--magenta)
+    color:var(--magenta);
 }
 
 body {
@@ -32,7 +32,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    outline: none;
+    outline: no;
 }
 
 input {
@@ -48,7 +48,7 @@ input[type="submit"] {
 }
 
 input[type="email"] {
-    /* background-color: hsl(313, 96%, 54%); */
+    background-color: hsl(313, 96%, 54%);
 }
 
 fieldset {
@@ -57,15 +57,22 @@ fieldset {
 }
 
 /* pseudeElement - werden mit zwei doppelPunkten notiert */
-::placeholder {
-    color:var(--magenta);
+input::placeholder {
+    color:rgb(214, 200, 200);
+    font-size: small;
+   
 }
+
 
 /* pseudeElement - fügt über css inhalte ein */
 .pflicht::before {
     content:'*';
     color: var(--magenta);
     padding-right: 7px;
+}
+.pflicht::after{
+    content: "";
+    padding-right: 8p;
 }
 
 
