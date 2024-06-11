@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: hsl(208, 41%, 44%);
+}
+
+.flexen {
+    display: flex;
+    gap: 7px;
+    
+}
+
+.bild img {
+    width:100%;
+    height: auto;
+}
+
+.bild {
+    
+    flex:1;
+}
+
+.text {
+    
+    flex:2;
+    /* border:2px solid silver; */
+}
+
+/* ---------------------------section zweiartikel--------------------------- */
+
+.zweiartikel {
+    display:flex;
+    gap: 7px;
+}
+
+.zweiartikel .flexen {
+    flex-direction: column;
+}

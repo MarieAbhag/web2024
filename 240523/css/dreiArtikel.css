@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: hsl(208, 53%, 49%);
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.dreiArtikel {
+    display:flex;
+    padding: 11px;
+    margin:11px;
+    gap:11px;
+    border:1px solid hsl(208, 53%, 49%);
+}

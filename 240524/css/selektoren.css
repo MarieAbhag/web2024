@@ -1,0 +1,25 @@
+/* universalSelektor */
+* {}
+
+/* elementSelektor */
+div {}
+
+/* nachfahreSelektor */
+div p {}
+
+img {}
+
+/* klassenSelektor */
+.klassenname {}
+
+/* oder */
+div.klassenname {}
+
+/* klasse + nachfahre */
+.klassenname div {}
+
+.klassenname .eins {
+    background-color: bisque;
+    color: blue;
+}
+

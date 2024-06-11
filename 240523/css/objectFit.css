@@ -1,0 +1,47 @@
+.sonne {
+    width:300px;
+    height: 200px;
+    border:2px solid silver;
+}
+
+.sonne img {
+    width:300px;
+    height: 200px;
+    object-fit:cover;
+    object-position: 100%;
+}
+
+/* --------------------------------------------------------------- */
+
+.maxwidth {
+    width: 800px;
+    height: 200px;
+}
+
+.maxwidth img {
+    /* mit max-width wird das bild 
+    nicht über seine eigene größe hinus skaliert */
+    max-width:100%; 
+    height: auto;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.flexen {
+    width: 300px;
+    height: 300px;
+    border:2px solid silver;
+    display:flex;
+    gap:20px;
+    align-items:flex-end;        /*vertikalAchse*/
+
+    /* ein element zentrieren */
+    justify-content: center;    /*horizontalAchse*/
+    align-items:center;        
+}
+
+.flexen h4 {
+    margin:0;
+    background-color: bisque;
+    
+}

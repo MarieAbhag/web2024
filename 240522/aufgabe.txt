@@ -1,0 +1,5 @@
+für heute nachmittag:
+
+die "flexenSeite" von mediaEvent anschauen
+
+in w3schools: flex-grow,flex-shrink,flex-basis

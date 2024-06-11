@@ -1,0 +1,7 @@
+aufgabe:
+baut bitte eine index.html mit einer navigation zu unterseiten
+in den unterseiten ein logo,
+welches zu index.html verlinkt
+
+bilder suchen für ein thema eurer wahl
+alle inhalte widerholen

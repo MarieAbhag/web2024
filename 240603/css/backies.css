@@ -1,0 +1,128 @@
+/* multiple backgrounds */
+
+.twoImages {
+    border:2px solid;
+    height: 50vh;
+    background-image:url(../img/weisserHai.gif), url(../img/blue.png);
+    background-position: -20px 100px, left top;
+    background-repeat:no-repeat,no-repeat;
+    background-size: 50%, cover;
+}
+
+/* verlauf mit css  */
+.verlauf {
+    height:50vh;
+    /* background-image: linear-gradient(to bottom right,orange,red); */
+    background-image: linear-gradient(160deg,orange,red);
+    background-image: linear-gradient(160deg,hsla(186, 58%, 28%, 0.753),rgba(193, 193, 214, 0.709));
+}
+
+/* mischen der HgBilder mit blendMode  */
+.blendmode {
+    height: 100vh;
+    background-image: 
+    linear-gradient(160deg,hsla(186, 58%, 28%, 0.753),rgba(193, 193, 214, 0.709)),
+    url(../img/dord.png);
+    background-repeat: repeat,no-repeat;
+    background-size: 70%,100%;
+    /* background-position: center; */
+    background-blend-mode:lighten;
+    /* background-color: rgba(240, 248, 255, 0.8); */
+}
+
+
+.backdrop {
+    background-image: url(../img/rain.png);
+    background-repeat: repeat-x;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soft {
+    width:400px;
+    height: 200px;
+    background-image: linear-gradient(180deg,rgba(193, 193, 214, 0.347)30%,hsla(186, 58%, 28%, 0.45)70%);
+    /* opacity:0.2; */
+
+     /* vendorPräfix für webkitBrowser */
+    -webkit-backdrop-filter: contrast(180%) blur(2px);
+    backdrop-filter: contrast(180%) blur(2px);
+    
+}
+
+
+/* filter für VG-Bilder */
+.filter {
+    height:30vh;
+}
+
+.filter img {
+    width:70%;
+    filter: grayscale(100%);
+}
+
+
+/* opacityFilter  */
+.all {
+    border:1px solid silver;
+    position:relative;
+    height: 200px;
+}
+
+.hg {
+    height: 200px;
+    background-image:url(../img/dord.png);
+    background-position: left top;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.opacity {
+    -webkit-filter:opacity(.5);
+    filter:opacity(.5);
+}
+
+.text {
+    position: absolute;
+    top:40px;
+    left:50px;
+    z-index:50;
+}
+
+
+/* repeating linear  */
+.repeatingLinear {
+    width:100vw;
+    height: 100vh;
+    position: relative;
+    background: repeating-linear-gradient(
+        -45deg,
+        hsla(215, 52%, 30%, 0.853) 0%,  /* blau */
+		hsla(216, 48%, 30%, 0.836) 15%, /* grün */
+		hsla(240, 12%, 72%, 0.987) 35%,  /* rosa */
+		hsla(215, 52%, 30%, 0.853) 55%  /* blau */
+    );
+
+    background-size: 200% 200%;
+	animation: diagonal alternate 15s infinite;
+}
+
+@keyframes diagonal {
+    0% {background-position: 0% 50%}
+  100% {background-position: 100% 50%}
+    
+}
+
+.innen {
+    width: 1800px;
+    height: 1013px;
+    position: absolute;
+    left:-100px;
+    top:0;
+    background-image: url(../img/weisserHai.gif);
+    background-position: left top;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,4 @@
+aufgabe:
+erstellt bitte in einer eigenen datei
+euren eigenen Grundaufbau
+und füllt diesen z.B. mit  section und article

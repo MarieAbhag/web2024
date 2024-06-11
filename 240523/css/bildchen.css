@@ -1,0 +1,32 @@
+img {
+    width: 50%;
+    height: auto;
+}
+
+.eins {
+    background-color: lightblue;
+}
+
+.eins img {
+    width: 20%;
+}
+
+.rahmen {
+    border:2px solid blue;
+}
+
+.innenabstand {
+    padding:11px;
+}
+
+.aussenabstand {
+    margin-top:11px;
+}
+
+.aussen div {
+    background-color: rgb(60, 116, 166);
+}
+
+.dreidivs div {
+    background-color: brown;
+}

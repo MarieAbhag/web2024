@@ -1,0 +1,80 @@
+    /**/
+
+ 
+
+
+    /* div = elementSelektor */
+    div {
+        background-color: hsl(186, 57%, 35%);   /*hgfarbe*/
+        color: hsl(186, 57%, 95%);              /*schriftfarbe*/
+        padding:10px;                             /*innenAbstand*/
+        width: 40px;                              /*breite des div*/
+    }
+
+    /* .flex = klassenSelektor */
+    .flexcontainer {
+        width: 100%;
+        background-color: hsl(186, 57%, 75%);
+        display: flex;                               /*macht aus dem div einen flexcontainer*/
+        gap:7px;                                     /*lücke*/
+       
+    }
+
+    /* ---------------justify content------------------------------------- */
+
+    .justify {
+        margin-top: 10px;
+        width: 100%;
+        background-color: hsl(186, 57%, 75%);
+        display: flex; 
+        justify-content: space-between;              /*space zwischen den items*/
+        justify-content:space-evenly;                /*gleichmäßig platz*/                                     
+    }
+
+
+    /* ------------------------fiftyfifty------------------------------------ */
+
+    .fiftyfifty {
+        margin-top: 10px;
+        width: 100%;
+        background-color: hsl(186, 57%, 75%);
+        display: flex; 
+        gap:7px;
+    }
+    
+    /* nachfahreSelektor */
+    /* gilt für ein div so es IN der class fiftyfifty steht */
+    .fiftyfifty div {
+        background-color: red;
+        /* flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 80px; */
+        /* flex:0 0 200px; */
+        flex:1;
+    }
+
+
+    /* --------------------------eins zu zwei------------------------ */
+
+    .einszuzwei {
+        margin-top: 10px;
+        width: 100%;
+        background-color: hsl(186, 57%, 75%);
+        display: flex; 
+        gap:7px;
+    }
+
+    .links {
+        flex:1;
+    }
+
+    .rechts {
+        flex:2;
+    }
+
+    img {
+        width:100%;
+        height: auto;
+    }
+
+   
