@@ -1,0 +1,8 @@
+aufgabe:
+
+baut bitte eine eigene navi,
+die simple mit display:none und display:block
+aus-und eingeblendet wird
+
+und testet min-und max-width
+

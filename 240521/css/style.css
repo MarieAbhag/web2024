@@ -1,0 +1,41 @@
+
+/* css = Cascading Style Sheets */
+
+
+/* ein kommentar in css mit strg+# */
+			 /* selektor { 
+				eigenschaft:wert;
+} */
+
+/* {} = AltGr+7 */
+			
+    div {
+        background-color: lightblue;
+        background-color: rgb(255, 0, 0);
+        background-color: hsl(208, 28%, 84%);
+        /* aussenAbstand = margin  */
+        margin-top: 50px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+
+        /* kurzschreibweise */
+        margin: 30px 30px 10px 30px;
+
+        /* innenAbstand = padding */
+        padding: 20px;
+
+        /* umrandung = border  */
+        border:3px solid hsl(208, 28%, 44%);
+        border-radius: 12px;
+
+        width: 140px;
+        height: 200px;
+        box-sizing: border-box;
+	}
+
+    .anders {
+        background-color: hsl(208, 28%, 44%);
+        width: 200px;
+    }
+    

@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<title>nav togglen</title>
+		<!-- <link href="../css/style.css" rel="stylesheet"> -->
+		<style>
+			.toggle { display:none; }
+			.slowdown { display:block; }
+		</style>
+
+
+	</head>
+
+
+
+	<body>
+		<div class="icon">icon</div>
+		<ul class="toggle">
+			<li><a href="#">link</a></li>
+			<li><a href="#">link</a></li>
+			<li><a href="#">link</a></li>
+			<li><a href="#">link</a></li>
+		</ul>
+
+		<script>
+			let icon = document.querySelector('.icon');
+			icon.addEventListener('click',function(){
+				document.querySelector('.toggle').classList.toggle('slowdown');
+			});
+		</script>
+	</body>
+
+
+
+</html>
+

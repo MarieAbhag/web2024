@@ -1,0 +1,90 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>dokumententitel</title>
+		<!-- <link href="../css/style.css" rel="stylesheet"> -->
+		<style>
+			div {
+				border: 2px solid silver;
+				padding: 7px;
+			}
+
+			.container {
+				display: flex;
+				gap: 7px;
+				flex-direction: column;
+			}
+
+			.icon {
+				background-color: aqua;
+			}
+
+			.links {
+				background-image: url(../img/blue.png);
+				background-size: cover;
+			}
+
+			@media(min-width:450px) {
+				.container {
+					flex-direction: row;
+				}
+
+				div {
+					box-shadow: 5px 10px 12px rgba(198, 191, 185,0.4);
+				}
+
+				.links {
+					background-image: url(../img/dord.png);
+				
+				}
+			}
+
+			@media(min-width:600px) {
+				.container {
+					background-color: lightcoral;
+				}
+
+				.icon {
+					display:none;
+				}
+			} 
+
+			@media(min-width:725px) {
+				.links, .rechts {
+					flex:1;
+				}
+			} 
+		</style>
+
+
+	</head>
+
+
+
+	<body>
+		<div class="icon">menü</div>
+		<section class="container">
+			<div class="links">
+				<h3>links</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+			</div>
+			<div class="rechts">
+				<h3>rechts</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+			</div>
+		</section>
+	</body>
+
+	<!-- aufgabe:
+	das menü durch das burgerMenü ersetzen
+	ab einem bestimmten punkt soll der burger verschwinden
+	und die navigation erscheinen -->
+
+
+</html>
+

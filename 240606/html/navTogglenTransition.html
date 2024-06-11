@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<title>nav togglen</title>
+		<link href="../css/navTogglenTransition.css" rel="stylesheet">
+		<style></style>
+
+
+	</head>
+
+
+
+	<body>
+		<header>
+			<div class="icon">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+
+
+			<nav class="mainNav">
+				<ul class="toggle">
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		
+
+		<script>
+			let icon = document.querySelector('.icon');
+			let navi = document.querySelector('.mainNav');
+			let list = document.querySelector('.toggle');
+
+			icon.addEventListener('click',function(){
+				
+				// document.querySelector('.toggle').classList.toggle('slowdown');
+				// navi.classList.toggle('sichtbar');
+				list.classList.toggle('slowdown');
+				this.classList.toggle('checked');
+				// this ist das icon selbst
+			});
+
+			// window.addEventListener('resize', function() {
+			// 	if(window.outerWidth > 600) {
+			// 		// alert('treffer');
+			// 		document.querySelector('.toggle').classList.toggle('slowdown');
+			// 	}
+			// })
+		</script>
+	</body>
+
+
+
+</html>
+

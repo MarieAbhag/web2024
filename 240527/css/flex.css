@@ -1,0 +1,25 @@
+.flex {
+    background-color: lightskyblue;
+    display: flex;
+}
+
+.flex div {
+    padding:15px;
+    background-color: limegreen;
+    border:1px solid;
+    font-size:x-large;
+    
+    flex-grow: 0;       /*darf nicht wachsen */
+    flex-shrink: 0;     /*darf nicht schrumpfen*/
+    flex-basis:170px;   /*hat eine breite von 170px*/
+
+    flex:0 0 170px;     /*kurzschreibweise*/
+
+    flex:1;
+}
+
+.flex .item2 {
+    background-color: yellow;
+    flex:1 1 auto;
+    flex:3;
+}

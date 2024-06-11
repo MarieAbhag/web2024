@@ -1,0 +1,25 @@
+für heute nachmittag:
+
+bitte eine neue htmlSeite erstellen boxmodel.html 
+
+in zeile 10 style.css in boxmodel.css umbenennen
+
+im css-ordner eine neue datei erstellen ( boxmodel.css )
+
+in der boxmodel.html in den body ein div einfügen 
+( nur div schreiben und enter drücken )
+
+im div ein wort einfügen
+
+in der css 
+
+div {
+
+}
+
+innerhalb der geschweiften klammern die eigenschaften einfügen
+
+in w3schools nachschauen:
+margin, padding, border
+
+diese eigenschaften in den geschweiften klammern testen

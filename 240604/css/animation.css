@@ -1,0 +1,24 @@
+div {
+    width:300px;
+    height: 150px;
+    background-color: aquamarine;
+    animation-name: lauf;
+    animation-duration: 8s;
+    /* animation-iteration-count: infinite; */
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+/* @keyframes lauf {
+    from { transform: translateY(0); }
+    to   { transform: translateY(100%); }
+
+} */
+
+@keyframes lauf {
+    0%   { background-color: rgb(104, 148, 187); transform: translateY(0); }
+    25%  { background-color: rgb(65, 188, 125); transform: translateY(25%); }
+    50%  { background-color: rgb(170, 29, 116); transform: translateY(100%); }
+    100% { background-color: rgb(187, 104, 104); transform: translateY(50%); }
+    
+}
