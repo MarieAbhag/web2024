@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>dokumententitel</title>
+		<link href="../fonts/fonts.css" rel="stylesheet">
+		<link href="../css/mediaEinbinden.css" rel="stylesheet">
+		<style></style>
+
+
+	</head>
+
+
+
+	<body>
+		<h1>media einbinden</h1>
+		<!-- <p>wie man audio daten einbindet</p>
+		<p>audio daten werden mit dem audio tag eingefügt</p>
+		<h3>audio einbinden</h3>
+		<audio src="../media/04-Death_Becomes_Fur.mp3" controls>
+			<p>ihr browser unterstützt das audio element nicht</p>
+		</audio> -->
+
+		<!-- <audio controls>
+			<source src="media/04-Death_Becomes_Fur.mp3" type="audio/mp3">
+			<source src="media/04-Death_Becomes_Fur.oga" type="audio/ogg">
+			<source src="media/04-Death_Becomes_Fur.wav" type="audio/wav">
+			<source src="media/04-Death_Becomes_Fur.flac" type="audio/flac">
+		</audio> -->
+		<!-- <p>
+			<a href="../media/04-Death_Becomes_Fur.mp3">audi runterladen</a>
+		</p> -->
+
+		<!-- <h3>parameter für audio und video</h3> -->
+		<!-- <ul>
+			<li>controls - steuerelemente des browsers</li>
+			<li>autoplay - fkt nur mit mute - autabspielen</li>
+			<li>muted</li>
+			<li>loop</li>
+		</ul> -->
+		
+		<!-- <h3>video einbinden</h3> 
+		<div class="video">
+			<video src="../media/big_buck_bunny.mp4" autoplay muted controls></video>
+		</div> -->
+
+		<h3>iFrame einbinden</h3>
+		<!-- <iframe src="../html/schriften.html" frameborder="1" width="300" height="150"></iframe>
+		<iframe src="http://www.comcave.de" frameborder="1" width="600" height="250">
+			ihr browser unterstützt keine iframes
+		  </iframe> -->
+
+		  <!-- <iframe width="373" height="210" src="https://www.youtube.com/embed/HXm96CHWXuc" title="Last Rodeo Ride Before The Arrival - New York Vendée Race - Day 11" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+		  <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HXm96CHWXuc?si=4ITeacJ5o7gCZh9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+		
+		  <h3>video datenschutzkonform einbinden</h3>
+		
+		  <div class="framebox" onclick="this.firstElementChild.src=this.firstElementChild.getAttribute('data-src')">
+			<iframe width="560" height="315" data-src="https://www.youtube-nocookie.com/embed/HXm96CHWXuc?si=4ITeacJ5o7gCZh9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<p>hier können Sie sich einen film über youtube anzeigen lassen
+				wenn Sie dies anwählen werden Ihre Daten beim Anbieter gespeichert</p>
+		  </div>
+
+
+		 
+		</body>
+
+
+
+</html>
+
