@@ -1,0 +1,7 @@
+Übungstag:
+
+Wiederholung, Übung aller Themen
+insbesondere Erstellung einer Navigation | pseudoKlassen
+Semantik | Bildauswahl für den Browser [ bilder in verschiedenen Größen ]
+breakpoints | variable Schriftgrößen
+Erstellen von transitions

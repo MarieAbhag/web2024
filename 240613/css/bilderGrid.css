@@ -1,0 +1,22 @@
+body {
+
+    font-family: 'fliesstext';
+    font-size: 1.15rem;
+}
+
+
+.gridcontainer {
+    border:1px solid silver;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax( 150px,1fr));
+    gap: 15px;
+}
+
+.gridcontainer img {
+    width: 100%;
+}
+
+/* pseudoKlasse :hover */
+img:hover {
+
+}
