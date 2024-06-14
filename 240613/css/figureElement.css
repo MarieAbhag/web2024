@@ -17,12 +17,13 @@
 
 .productImage img {
     width:100%;
+    height: auto;
 }
 
 @media(min-width:800px) {
     .galleryWrapper{
         display: grid;
-        grid-template-columns:1fr,4fr;
+        grid-template-columns:1fr 4fr;
         grid-template-areas: 
         "small1 large"
         "small2 large"
