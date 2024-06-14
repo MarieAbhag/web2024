@@ -1,0 +1,41 @@
+h1,h3 {
+    font-family: 'headline';
+}
+h3 {
+    font-size:1.55rem;
+    color: rgb(207, 18, 147);
+}
+
+body {
+
+    font-family: 'fliesstext';
+    font-size: 1.15rem;
+}
+
+.framebox {
+    background-color: aliceblue;
+    width: 560px;
+    height: 315px;
+    position: relative;
+    cursor: pointer;
+}
+
+.framebox iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.framebox p {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    margin: 0;
+    font-size: 1.55rem;
+    padding: 40px 20px;
+}
+
+.framebox iframe[src] + p {
+    display: none;
+  }

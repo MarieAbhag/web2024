@@ -1,0 +1,71 @@
+/* flex ist eindimensional entweder zeile oder spalte
+grid ist zweidimensional zeile und spalte */
+
+body {
+
+    font-family: 'fliesstext';
+    font-size: 1.15rem;
+}
+
+/* breite der spalten in px, % oder fr (fractionUnit) */
+.grid {
+    width:80%;
+    /* height: 320px; */
+    background-color: hsl(208, 33%, 37%);
+    color:white;
+    display: grid;
+    gap:10px;
+    grid-template-rows: 100px 75px 50px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: repeat(3,210px);
+
+     /* fraction units == nutze den zur verfügung stehenden raum */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+
+    /* minmax = mindestBreite und maxBreite */
+    grid-template-columns: repeat(3,minmax(250px,1fr));
+
+    /* schlüsselwort auto-fit  */
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+         /* mit autofit + fraction ist LEIDER nicht erlaubt */
+			/* grid-template-columns:minmax( 200px ,1fr); */
+
+    grid-template-columns:repeat(auto-fit, minmax( 150px,1fr));
+}
+
+
+
+.ersteZelle {
+    background-color: hsl(208, 33%, 47%);
+    /* grid-column: 2/3;
+    grid-row: 2/4; */
+}
+.zweiteZelle {
+    background-color: hsla(208, 33%, 57%, 0.499);
+    /* grid-column: 2/4;
+    grid-row: 3/4; */
+}
+
+.dritteZelle {
+    background-color: hsl(208, 33%, 67%);
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+}
+.vierteZelle {
+    background-color: hsl(208, 33%, 77%);
+    /* grid-column: 3/4; */
+    /* grid-row: 2/3; */
+}
+.fuenfteZelle {
+    background-color: hsl(208, 33%, 87%);
+    /* grid-column: 1/2;
+    grid-row: 3/4; */
+}
+.sechsteZelle {
+    background-color: hsl(204, 23%, 50%);
+    /* grid-column: 3/4; */
+    /* grid-row: 1/2; */
+}

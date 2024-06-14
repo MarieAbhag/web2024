@@ -1,0 +1,91 @@
+/* flex ist eindimensional entweder zeile oder spalte
+grid ist zweidimensional zeile und spalte */
+
+body {
+
+    font-family: 'fliesstext';
+    font-size: 1.15rem;
+}
+
+/* gridAreas  */
+.gridcontainer {
+    width:80%;
+    height: 50vh;
+    background-color: hsl(208, 33%, 37%);
+    color:white;
+    display: grid;
+   grid-template-areas: 
+   /* "header"
+   "navi"
+   "hero"
+   "footer"; */
+   
+   "navi navi navi navi"
+   "footer footer footer footer"
+   "hero hero hero hero"
+    "header header header header";
+}
+
+
+
+.mainHeader {
+    background-color: hsl(208, 33%, 47%);
+    grid-area:header;
+}
+.mainNav {
+    background-color: hsl(208, 33%, 57%);
+    grid-area:navi;
+}
+
+.hero {
+    background-color: hsl(208, 33%, 67%);
+    grid-area:hero;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainFooter {
+    background-color: hsl(208, 33%, 77%);
+    grid-area:footer;
+}
+
+
+
+
+@media(min-width:30em) {
+    .gridcontainer {
+        grid-template-areas: 
+        "header header"
+        "navi hero"
+        "navi hero"
+        "footer footer";
+    }
+    
+}
+
+@media(min-width:37.5em) {
+    /* -------------------header wird zum gridContainer------------------  */
+        /* .mainHeader {
+            display:grid;
+            grid-template-columns: repeat(3,minmax(100px,1fr));
+            
+        }
+
+        .logo {
+            grid-column:1/2;
+            background-color: hsl(208, 42%, 81%);
+        }
+        .nav {
+            grid-column:2/3;
+            background-color: hsl(208, 42%, 91%);
+        }
+        .suche {
+            grid-column:3/4;
+            background-color: hsl(181, 48%, 44%);
+        } */
+
+        .mainHeader {
+            display:flex;
+            gap:11px;
+        }
+}

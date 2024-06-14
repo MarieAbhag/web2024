@@ -1,0 +1,81 @@
+:root {
+    --magenta:hsl(313, 96%, 54%);
+}
+
+
+
+
+
+h1,h3 {
+    font-family: 'headline';
+}
+h3 {
+    font-size:1.55rem;
+    color:var(--magenta)
+}
+
+body {
+
+    font-family: 'fliesstext';
+    font-size: 1.15rem;
+}
+
+label {
+    display:inline-block;
+    width:100px;
+}
+
+input, textarea {
+    background-color: white;
+    border:1px solid silver;
+    font-size: clamp(1rem, -0.6667rem + 5.3333vw, 2rem);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input {
+    background-color: hsl(208, 39%, 90%);
+}
+
+/* ausschließlich für den submitButton - attributSelektor - mit eckigen klammern */
+input[type="submit"] {
+    background-color:var(--magenta);
+    color:var(aliceblue);
+    border:none;
+    border-radius: 5px;
+}
+
+input[type="email"] {
+    /* background-color: hsl(313, 96%, 54%); */
+}
+
+fieldset {
+    border:2px solid var(--magenta);
+    padding: 0.6rem;
+}
+
+/* pseudeElement - werden mit zwei doppelPunkten notiert */
+::placeholder {
+    color:var(--magenta);
+}
+
+/* pseudeElement - fügt über css inhalte ein */
+.pflicht::before {
+    content:'*';
+    color: var(--magenta);
+    padding-right: 7px;
+}
+
+
+
+textarea {
+    resize: none;
+}
+
+.form1 {
+    width: 500px;
+    margin:0 auto;
+    width:min(31.25rem, calc(100vw - 2rem));
+}
