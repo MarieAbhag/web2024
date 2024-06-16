@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tosson Page</title>
+	<link rel="icon" type="image/x-icon" href="img/Tlogo.png">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="app.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<img src="img/Tlogo.png" alt="" class="logo">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a onclick="AboutUsSection()">About Me</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Skills</a></li>
+				<li><a href="#">Contact Me</a></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<h4>Hi There. My name is </h4>
+			<h1>Amir Tosson</h1>
+			<h3 > I am a <span class="multitext"></span></h3>
+			<div class="paragraph">
+				<p>The four concepts that inspire me:
+					<br>
+					<br>
+					<p class="ani">“Learn as if you were to live forever”<span> - Mahatma Gandhi</span></p>
+					<br>
+					<br>
+					<p class="ani ani2">“Imagination is more important than knowledge”<span> - Albert Einstein</span></p>
+					<br>
+					<br>
+					<p class="ani ani3">“The only way to do great work is to love what you do”<span> - Steve Jobs</span></p>
+					<br>
+					<br>
+					<p class="ani ani4">“A person who never made a mistake never tried anything new”<span> - Albert Einstein</span></p>					
+				</p>
+			</div>
+			<div class="row">
+			<img src="img/mg.jpg" alt="" class="ani-img">
+			<img src="img/ae.jpg" alt="" class=" ani-img ani2 ">
+			<img src="img/sj.jpg" alt="" class=" ani-img ani3 ">
+			<img src="img/aee.jpg" alt="" class=" ani-img ani4 ">
+
+			</div>
+			
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about" id="aboutme">
+		<div class="title">
+			<h2>About Me</h2>
+		</div>
+		<div class="main">
+			<div>
+				<img src="img/Download.png" class="aboutme-img">
+			</div>
+			
+			<div class="about-text">
+				<div class="tab">
+					<a class="tablinks active" onclick="openTab(event, 'personalstab')">Personal Details</a>
+					<a class="tablinks" onclick="openTab(event, 'skillstab')">My Skills</a>
+					<a class="tablinks" onclick="openTab(event, 'strengthstab')">My Strengths</a>
+					<a class="tablinks" onclick="openTab(event, 'weaknessestab')">My Weaknesses</a>
+
+				  </div>
+				  
+				  <div id="personalstab" class="tabcontent" style="display: flex;">
+						<div>
+							<p>My Name: 
+								<span>Amir Tosson</span>
+							</p>	
+							<p>Email: 
+								<span>amir.tosson@uni-siegen.de</span>
+							</p>
+							<p>Address: 
+								<span>Siegen, Germany</span>
+							</p>
+						</div>
+						<div>
+							<p>Age: 
+								<span>33</span>
+							</p>
+							<p>Phone: 
+								<span>+49 17620663941</span>
+							</p>
+							<p>Nationality: 
+								<span>German</span>
+							</p>
+						</div>
+				  </div>
+				    
+				  <div id="skillstab" class="tabcontent">
+					  <div>
+						<p>Data Science: 
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star"></span>
+						</p>
+						<p>Software Engineering:
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star"></span>
+						</p>
+						<p>Web Development: 
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star"></span>
+							<span class="fa fa-star star"></span>
+						</p>
+					  </div>
+					  <div>
+						<p>R&D: 
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+						</p>
+						<p>Physics: 
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star"></span>
+							<span class="fa fa-star star"></span>
+						</p>
+						<p>Mathmatics: 
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star checked"></span>
+							<span class="fa fa-star star"></span>
+						</p>
+					  </div>
+				  </div>
+				  
+				  <div id="strengthstab" class="tabcontent">
+					  <div>
+					<p>Quick learner: <span> I am able to grasp new concepts quickly</span>  </p>
+					<p>Team player: <span> I believe that only teamwork will enable us to get the job done on time</span>  </p>
+					<p>Problem solver: <span> I don't search for a solution, but I seek the simplest one</span>  </p>
+					<p>Multi-task: <span> Able to grasp new concepts quickly</span>  </p>
+
+				</div>
+				  </div>
+				  <div id="weaknessestab" class="tabcontent">
+					<div>
+					<p>Lack of patience: <span> I am able to grasp new concepts quickly</span>  </p>
+					<p>Self Righteous: <span> I am able to grasp new concepts quickly</span>  </p>
+				</div>
+				  </div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+	<div class="service">
+		<div class="title">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Me------>
+	<div class="contact-me">
+		<p>Let Me Get You A Beautiful Website.</p>
+		<a class="button-two" href="#">Hire Me</a>
+	</div>
+
+	<!------footer start--------->
+	<footer>
+		<p>Tahmid Ahmed</p>
+		<p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">CopyRight By Tahmid Ahmed</p>
+	</footer>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script>
+		var typingEff = new Typed(".multitext", {
+	  strings: ["Data Engineer","Software Engineer","Web Developer","Physicist"],
+	  loop: true,
+	  typeSpeed: 50,
+	  backSpeed: 50,
+	  backDelay: 1500
+  })
+	</script>
+</body>
+</html>

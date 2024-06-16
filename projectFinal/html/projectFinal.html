@@ -1,0 +1,114 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Time to travel</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="../css/projectFinal.css" rel="stylesheet">
+	</head>
+   <body>
+	<header>
+		<nav>
+			<div class="nav-item" onclick="onNavItemClicked('home')">
+				<div class="nav-item-icon" > 
+					<i class="fa fa-fw fa-home"></i>
+				</div>
+				<div class="nav-item-title">
+					 Home
+				</div>
+			</div>
+			<div class="nav-item" onclick="onNavItemClicked('tours')">
+				<div class="nav-item-icon">
+					<i class="fa fa-handshake-o"></i>
+				</div>
+				<div  class="nav-item-title">
+					Tours
+				</div>
+			</div>
+			<div class="nav-item" onclick="onNavItemClicked('contact')">
+				<div class="nav-item-icon">
+					<i class="fa fa-fw fa-envelope"></i>
+				</div>
+				<div class="nav-item-title">
+					Contact
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="container">
+		<!-- ----------------Home----------------------- -->
+		<section class="home">
+			<div class="home-text">
+				<h1>Time to travel</h1>
+			<p>The best time to visit Rocky Mountain National Park is from June to September when the snow is melted and the hiking trails and attractions are accessible. The Crown Jewel of Rocky Mountain NP, Longs Peak is one of the most coveted summits in the West.</p>
+			</div>
+		</section>
+		<!-- --------------Tours----------------------- -->
+		<section class="tours" id="tours">
+			<h2>Popular Tours</h2>
+			<div class="tour-cards">
+				<div class="tour-card">
+					<img src="../img/11634_1.jpg" alt="VA">
+					<p>Tour 1</p>
+					<span>There will be a small title here.</span>
+				</div>		
+				<div class="tour-card">
+					<img src="../img/Screenshot_73.png" alt="VA">
+					<p>Tour 2</p>
+					<span>There will be a small title here.</span>
+				</div>
+				
+				<div class="tour-card">
+					<img src="../img/istockphoto-1419410282-612x612.jpg" alt="VA">
+					<p>Tour 3</p>
+					<span>There will be a small title here.</span>
+				</div>
+			</div>
+		</section>
+					<!-- Discovery section with a promotional video button -->
+					<section class="discovery">
+						<h2>Discover the World in a New Way</h2>
+						<div class="video-promo">
+							<button class="video-button">Watch the Video</button>
+							<p>"Have you ever heard an avalanche roar in the mountains? Just after the avalanche roars, and there is absolute silence. You stop understanding where you are - that's 100%. Just very quiet." - Hans Kramlich</p>
+						</div>
+					</section>
+				</main>
+				<!-- Footer with social media links -->
+				<footer>
+					<div class="social-icons">
+						<a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+						<a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+						<a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+					</div>
+					<p>&copy; 2024 Time to Travel. All rights reserved.</p>
+				</footer>
+
+		
+	
+	</main>
+			
+	
+
+
+
+
+
+
+
+
+
+	<script>
+		function onNavItemClicked(id){
+			const element = document.getElementById(id);
+			element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+		}
+	</script>
+   </body>
+
+
+</html>
+

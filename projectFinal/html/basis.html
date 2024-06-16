@@ -1,0 +1,346 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>dokumententitel</title>
+		<!-- <link href="../css/style.css" rel="stylesheet"> -->
+		<style>
+			:root {
+    --primary-color: #00d1b2;        /* Teal */
+    --dark-background: #121212;      /* Dark background */
+    --light-background: #1b1b1b;     /* Slightly lighter dark */
+    --text-color: #fff;              /* White text */
+    --text-secondary: #ddd;          /* Light gray text */
+    --shadow-color: rgba(0, 0, 0, 0.2); /* Shadow color */
+    --shadow-strong: rgba(0, 0, 0, 0.5); /* Strong shadow */
+    --transition-duration: 0.3s;     /* Transition duration */
+    --font-primary: Arial, sans-serif; 
+    --font-size-base: 1rem;          
+    --font-size-large: 2.5rem;      
+    --font-size-medium: 2rem;        
+    --font-size-small: 1.2rem;       
+    --font-size-smaller: 0.9rem;     
+    --border-radius: 10px;           
+    --padding-small: 1em;            
+    --padding-medium: 4em;           
+    --padding-large: 10em;           
+    --gap-small: 1em;                
+    --gap-large: 2em;                
+}
+
+/* Reset and base styles */
+body, h1, h2, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    background: var(--dark-background);
+    color: var(--text-color);
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6); /* Transparent black */
+    padding: var(--padding-small);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-large);
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: var(--font-size-base);
+    transition: color var(--transition-duration) ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: var(--primary-color);
+}
+
+.hero {
+    background: url('../img/istockphoto-1221837116-612x612.jpg') no-repeat center center/cover;
+    padding: var(--padding-large) var(--padding-small);
+    text-align: center;
+    position: relative;
+    color: var(--text-color);
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: var(--font-size-large);
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: var(--font-size-small);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tours {
+    padding: var(--padding-medium) var(--padding-small);
+    text-align: center;
+    background: var(--light-background);
+}
+
+.tours h2 {
+    font-size: var(--font-size-medium);
+    margin-bottom: 1em;
+}
+
+.tour-cards {
+    display: flex;
+    gap: var(--gap-small);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tour-card {
+    background: #333;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.tour-card img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.tour-card p {
+    margin: 0.5em 0;
+    font-size: var(--font-size-base);
+    color: var(--primary-color);
+}
+
+.tour-card span {
+    display: block;
+    padding: 0.5em;
+    font-size: var(--font-size-smaller);
+    color: var(--text-secondary);
+}
+
+.discovery {
+    padding: var(--padding-medium) var(--padding-small);
+    text-align: center;
+    background: url('forest.jpg') no-repeat center center/cover;
+    position: relative;
+    color: var(--text-color);
+}
+
+.discovery:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.discovery h2 {
+    position: relative;
+    z-index: 1;
+    font-size: var(--font-size-large);
+    margin-bottom: 1em;
+}
+
+.discovery .video-promo {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: var(--padding-small);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px var(--shadow-strong);
+}
+
+.video-button {
+    background: var(--primary-color);
+    border: none;
+    padding: 1em 2em;
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    transition: background var(--transition-duration) ease;
+}
+
+.video-button:hover,
+.video-button:focus {
+    background: #00a395;
+}
+
+footer {
+    background: var(--dark-background);
+    text-align: center;
+    padding: var(--padding-small);
+}
+
+.social-icons a {
+    margin: 0 0.5em;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+footer p {
+    margin-top: 1em;
+    font-size: var(--font-size-smaller);
+    color: #bbb;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .tours h2, .discovery h2 {
+        font-size: 2rem;
+    }
+
+    .tour-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-card {
+        max-width: 100%;
+        margin-bottom: var(--gap-small);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
+		
+		</style>
+
+
+	</head>
+
+
+
+	<body>
+		    <!-- Header with navigation -->
+			<header>
+				<nav>
+					<ul>
+						<li><a href="#">Main</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Tours</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<!-- Hero section with background image and introductory text -->
+				<section class="hero">
+					<div class="hero-text">
+						<h1>Time to Travel</h1>
+						<p>The best time to visit Rocky Mountain National Park is from June to September when the snow is melted and the hiking trails and attractions are accessible. The Crown Jewel of Rocky Mountain NP, Longs Peak is one of the most coveted summits in the West.</p>
+					</div>
+				</section>
+				<!-- Tours section with cards -->
+				<section class="tours">
+					<h2>Popular Tours</h2>
+					<div class="tour-cards">
+						<div class="tour-card">
+							<img src="tour1.jpg" alt="Tour 1">
+							<p>Tour 1</p>
+							<span>There will be a small title here.</span>
+						</div>
+						<div class="tour-card">
+							<img src="tour2.jpg" alt="Tour 2">
+							<p>Tour 2</p>
+							<span>There will be a small title here.</span>
+						</div>
+						<div class="tour-card">
+							<img src="tour3.jpg" alt="Tour 3">
+							<p>Tour 3</p>
+							<span>There will be a small title here.</span>
+						</div>
+						<div class="tour-card">
+							<img src="tour4.jpg" alt="Tour 4">
+							<p>Tour 4</p>
+							<span>There will be a small title here.</span>
+						</div>
+					</div>
+				</section>
+				<!-- Discovery section with a promotional video button -->
+				<section class="discovery">
+					<h2>Discover the World in a New Way</h2>
+					<div class="video-promo">
+						<button class="video-button">Watch the Video</button>
+						<p>"Have you ever heard an avalanche roar in the mountains? Just after the avalanche roars, and there is absolute silence. You stop understanding where you are - that's 100%. Just very quiet." - Hans Kramlich</p>
+					</div>
+				</section>
+			</main>
+			<!-- Footer with social media links -->
+			<footer>
+				<div class="social-icons">
+					<a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+					<a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+					<a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+				</div>
+				<p>&copy; 2024 Time to Travel. All rights reserved.</p>
+			</footer>
+		</body>
+	
+	</body>
+
+
+
+</html>
+

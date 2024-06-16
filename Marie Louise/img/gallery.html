@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		
+		<meta charset="utf-8"> 
+		<title>Gallery-Nature Photography</title>
+		<link href="marie.css" rel="stylesheet">
+		
+		<style></style>
+
+
+	</head>
+
+
+
+	<body>
+		<header>
+			<a href="index.html" class="logo">
+				<img src=" img/logo1.jpeg" alt="VA">
+			</a>
+			<nav>
+				<ul class="mainnav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="service.html">Service</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Gallery</h1>
+			<p>Explore our collectionf nature Photography</p>
+			<div class="full-image" id="fullImgBox">
+				<img src="img/_baac2c58-53a3-407e-9b06-abbcaecc42ed.jpg" id="fullImg" alt="VA">
+				<span onclick="closeFullImg()">X</span>
+			</div>
+			<div class="images">
+				<img src=" img/_4662d7a2-ea5b-4b30-8669-5653d23bfb4b.jpg" onclick="openFullImg(this.src)"alt="VA">
+				<img src=" img/_68161c19-03bf-4c63-8879-08f7c27d6d61.jpg" onclick="openFullImg(this.src)" alt="VA">
+				<img src=" img/_baac2c58-53a3-407e-9b06-abbcaecc42ed.jpg" onclick="openFullImg(this.src)" alt="VA">
+				<img src=" img/_af84991d-44e6-4a49-a7b7-7c69c209e09b.jpg" onclick="openFullImg(this.src)" alt="VA">
+				<img src="img/_a448b3aa-5af4-458b-b29f-2cce620546d2.jpg"  onclick="openFullImg(this.src)" alt="VA">
+			</div>
+			
+		
+		</main>
+		<script>
+			var fullImgBox = document.getElementById("fullImgBox")
+			var fullImg = document.getElementById("fullImg")
+			function openFullImg(pic){
+				fullImgBox.style.display = "flex"
+				fullImg.src = pic;
+			}
+			function closeFullImg(){
+				fullImgBox.style.display = "none"
+			}
+		</script>
+
+	</body>
+
+	<footer>
+		<a href="index.html"><img src="img/logo1.jpeg" alt="Logo" class="Logo"></a>
+	</footer>
+
+</html>
+
+
+
+
+
