@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>sprachkern</title>
+
+	</head>
+
+
+	<body>
+
+		<p id="demo"></p>
+
+		<script>
+			"use strict";		//bitte schaue genauer hin
+			// let tim = 30;	Uncaught SyntaxError: Identifier 'tim' has already been declared
+			//hal ='hello sun';	//Uncaught ReferenceError: hal is not defined
+
+			// let tim = 21;
+			// let tom = 20;
+			// if( tim < tom ) {
+			// 	document.getElementById('demo').innerHTML = 'tim bekommt das eis<br>';
+			// } else {
+			// 	document.getElementById('demo').innerHTML = 'der andere bekommt das eis<br>';
+			// }
+
+			
+
+			// wenn tim kleiner ist als tom - bekommt er ein eis 
+			// if( bedingung ) {
+			// 	ausführungsBlock - was soll passieren
+			// }
+			let tim = 18;
+			let tom = 20;
+			let isAtLeast18 = tim < tom ? 'tim bekommt das eis<br>' : 'der andere bekommt das eis<br>';
+			document.getElementById('demo').innerHTML =isAtLeast18;
+		
+			
+			
+		</script>
+
+			<!-- aufgabe: 
+			bitte eigene variablen erstellen
+			und eine eigene ifAbfrage 
+			was ist eine eigene verzweigung ? -->
+	</body>
+</html>

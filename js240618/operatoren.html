@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>hello</title>
+
+	</head>
+
+
+	<body>
+
+		<p id="anzeige"></p>
+
+		<script>
+			// operand	operator operand
+			let x = 5;
+				x += 11;	//erhöht um 11
+				x -= 1;
+				x /= 3;
+				x *= 4;
+
+			// document.getElementById('anzeige').innerHTML = x;
+
+			// operatoren für zeichenKetten
+			let salut = "ihr persönlicher newsletter";	//zeichenKette/string
+			let name  = 'horst';						//zeichenKette2
+			let message = salut + name;					//konkatenation
+
+			// vergleichsOperatoren
+			let zahl1 = '20';
+			let zahl2 = 30;
+
+			let ergebnis = zahl1 == zahl2;				//zahl1 ist gleich zahl2
+			    // ergebnis = zahl1 != zahl2;				//zahl1 ist ungleich zahl2
+			    // ergebnis = zahl1 > zahl2;				//zahl1 ist größer zahl2
+			    // ergebnis = zahl1 < zahl2;				//zahl1 ist kleiner zahl2
+			    // ergebnis = zahl1 >= zahl2;				//zahl1 ist größer oder gleich zahl2
+			    // ergebnis = zahl1 <= zahl2;				//zahl1 ist kleiner oder gleich zahl2
+
+
+				// ergebnis = zahl1 === zahl2;				//zahl1 ist gleich zahl2
+
+			//mit drei istGleichZeichen wird auch der sog. datenTyp verglichen
+			//wird auch strictGleich genannt
+
+
+
+			document.getElementById('anzeige').innerHTML = ergebnis;
+
+
+
+
+
+
+
+			// alert(message);		ein alarmFensterchen
+			// document.write('ich bin ein write');
+			// console.log('ich bin die console');
+
+		
+			
+		</script>
+	</body>
+</html>
