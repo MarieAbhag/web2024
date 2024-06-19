@@ -1,0 +1,4 @@
+aufgabe :
+
+kapselt bitt die unterschiedliche ifSAbfragen in funktionen
+und ruft diese funktionen mit buttons auf...

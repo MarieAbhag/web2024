@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>sprachkern</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+
+		<!-- die werte die man übergibt nennt man argumente -->
+		<button onclick="summe(10,20)">summe aus 10 und 20</button>
+		<button onclick="summe(20,30)">summe aus 20 und 30</button>
+
+		<script>
+			// erstellen einer funktion mit dem schlüsselwort "function"
+			// plus einem beliebigen namen plus die beiden rundKlammern
+			// funktionsDeklaration
+
+			//eine function mit zwei parametern
+			function summe(a,b) {
+
+				let ergebnis = a + b;
+				document.querySelector('#demo').innerHTML = "summe "+ergebnis+" aus der funktion ";
+			}
+		</script>
+
+	</body>
+</html>

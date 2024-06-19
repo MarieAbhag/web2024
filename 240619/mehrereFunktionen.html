@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>sprachkern</title>
+
+	</head>
+
+
+	<body>
+		<p id="anzeige">anzeige</p>
+		<button onclick="hallo1()">hallo bert</button>
+		<button onclick="hallo2()">hallo ernie</button>
+		<button onclick="hallo3()">hallo sylvia</button>
+		<button onclick="hallo4()">hallo inge</button>
+<!-- -------------------------------------------------------------------------------- -->
+		<button onclick="hallo('sonne')">hallo name</button>
+
+
+
+		<script>
+			function hallo1() {
+				//was soll passieren
+				document.querySelector('#anzeige').innerHTML = ' hallo Bert<br>';
+			}
+			function hallo2() {
+				document.querySelector('#anzeige').innerHTML += ' hallo Ernie<br>';
+			}
+
+			function hallo3() {
+				document.querySelector('#anzeige').innerHTML += ' hallo Sylvia<br>';
+			}
+
+			function hallo4() {
+				document.querySelector('#anzeige').innerHTML += ' hallo Inge<br>';
+			}
+
+			// eine funktion anstelle von vieren
+
+			function hallo(name) {
+				document.querySelector('#anzeige').innerHTML += ' hallo '+name+'<br>';
+			}
+
+			document.querySelector('#anzeige').innerHTML += ' ich funktioniere ohne aufruf';
+				
+		</script>
+	</body>
+</html>

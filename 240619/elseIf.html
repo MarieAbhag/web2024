@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>sprachkern</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+
+		<script>
+			
+			let tim = 19;
+			// const demo = document.getElementById('demo');
+			const demo = document.querySelector('#demo');
+
+			if( tim >= 18 ) {
+				// 	wenn die bedingung erfüllt ist schreibe etwas in die #demo
+				demo.innerHTML = 'filme mit FSK0,FSK6,FSK12,FSK16,FSK18';
+			} else if( tim >= 16 ) {
+				demo.innerHTML = 'filme mit FSK0,FSK6,FSK12,FSK16';
+			} else if( tim >= 12 ) {
+				demo.innerHTML = 'filme mit FSK0,FSK6,FSK12';
+			} else {
+				demo.innerHTML = 'du darfst nicht ins kino';
+			}
+
+
+
+
+
+
+
+			//eine sog. verzweigung wenn die bedingung nicht erfüllt ist
+			// if( tim < tom ) {
+			// 	wenn die bedingung erfüllt ist
+			// } else {
+			// 	wenn die bedingung nicht erfüllt ist
+			// }
+		</script>
+	</body>
+</html>
