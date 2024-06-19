@@ -1,4 +1,5 @@
-// alert('hallo'); zum testen,ob der pfad zur tankstelle.js funktioniert
+// alert('hallo');
+//  zum testen,ob der pfad zur tankstelle.js funktioniert
 
 // welcher kraftstoff wurde getankt
 // d = diesel, g = gas, s = super
@@ -47,7 +48,7 @@ if ( kraftstoff == "d" ) {
 // logischer operator logisch ODER = klein 'd' ODER 'D' 
 //eine der beiden bedinungen muss erfüllt sein
 
-if( kraftstoff == 'd' || kraftstoff == 'D' ) {
+if( kraftstoff == 'd' || kraftstoff == 'b'  {
     //wenn der kunde über 50liter getankt hat
     if(liter > 50) {
         rechnung = (preis_diesel*liter)*0.8;
