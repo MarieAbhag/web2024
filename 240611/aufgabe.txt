@@ -1,9 +1,0 @@
-aufgabe:
-
-bitte ein beliebiges video aus youtube kopieren
-und datenschutzkonform
-in eine eigene html einfügen..
-
-erstellt bitte in eigens formular
-unter Mithilfe von w3schools
-und formatiert dieses nach eurem gusto...
