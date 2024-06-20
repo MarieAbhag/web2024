@@ -15,25 +15,36 @@
 		<script>
 			// mit einem array kann ich mehrere werte speichern
 			//index         0        1        2
-			const obst = ['apfel','birne','erdbeere'];
-			let anzahlElemente = obst.length; //3
+			const x = ['apfel','birne','erdbeere'];
+		
+			document.querySelector('#demo').innerHTML = x;
 
-			obst.push('himbeere');			//neues item am ende einfügen
-			obst.pop();						// das letzte item verschwindet
+			
+			x.push('himbeere');			//neues item am ende einfügen
+			x.pop();						// das letzte item verschwindet ((disappear))
+			x.unshift('kiwi');		//neues item am anfang einfügen((insert new item at the beginning))
+			x.shift();				// das erste item verschwindet
+			x.sort();
+			x.reverse();
+			x[1] = 'tonka';
+			let f = x[1];		//obst[am index 1]		//obst[am index 1]
+			document.querySelector('#demo').innerHTML = x;
+			
 
-			obst.unshift('kiwi');		//neues item am anfang einfügen
-			obst.shift();				// das erste item verschwindet
+			
+			
 
-			obst.sort();
-			obst.reverse();
+			
+			
 
-			obst[1] = 'tonka';
+			
 
-			let auswahl = obst[1];		//obst[am index 1]
+			
 
 
 
-			document.querySelector('#demo').innerHTML = obst;
+
+			
 		</script>
 	</body>
 </html>
