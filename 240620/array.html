@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>array</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+
+		<script>
+			// mit einem array kann ich mehrere werte speichern
+			//index         0        1        2
+			const obst = ['apfel','birne','erdbeere'];
+			let anzahlElemente = obst.length; //3
+
+			obst.push('himbeere');			//neues item am ende einfügen
+			obst.pop();						// das letzte item verschwindet
+
+			obst.unshift('kiwi');		//neues item am anfang einfügen
+			obst.shift();				// das erste item verschwindet
+
+			obst.sort();
+			obst.reverse();
+
+			obst[1] = 'tonka';
+
+			let auswahl = obst[1];		//obst[am index 1]
+
+
+
+			document.querySelector('#demo').innerHTML = obst;
+		</script>
+	</body>
+</html>

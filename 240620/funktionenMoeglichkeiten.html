@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>funktionsMöglichkeiten</title>
+		<style>
+			.alfa {
+				width:30vw;
+				height: 10vw;
+				background-color: lightblue;
+			}
+
+			.klein {
+				width: 50vw;
+				height: auto;
+				animation-name: fade;
+  				animation-duration: 2.5s;
+			}
+
+			@keyframes fade {
+  				from {opacity: .4}
+  				to {opacity: 1}
+			}
+			
+		</style>
+	</head>
+
+
+	<body>
+		<button onclick="text()">text</button>
+		<button onclick="stil()">styleÄndern</button>
+		<button onclick="klasseHinzu()">klasseHinzu</button>
+		<button onclick="klasseEntfernen()">klasseEntfernen</button>
+		<button onclick="umEinsErhoehen()">um 1 erhöhen</button>
+		<button onclick="bildTauschen()">bildTauschen</button>
+		<button onclick="berechnen()">berechnen</button>
+		<button onclick="gibtEsdasElement()">gibt es das element</button>
+		<button onclick="objektErstellen()">objekt erstellen</button>
+
+		<div class="alfa"></div>
+		<figure>
+			<img id="leinwand" src="img/dandelion-843587_640.jpg" alt="">
+		</figure>
+
+		<script src="js/funktionenMoeglichkeiten.js"></script>
+	</body>
+</html>
