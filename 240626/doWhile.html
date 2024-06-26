@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>schleifen</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+		
+		<script>
+			function ready() {
+				let text = '';
+				let i = 1;
+				
+				do {
+					text += '<br> die zahl lautet ' +i;
+					i++; 
+				}while( i < 1 )
+
+				document.querySelector('#demo').innerHTML = text;
+			}
+
+			document.addEventListener('DOMContentLoaded',ready);
+
+			// was in do steht wird wenigstens ein mal ausgeführt
+			// erst dann erfolgt die überprüfung
+		</script>
+	</body>
+</html>

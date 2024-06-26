@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>sprachkern</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+		<script>
+			const hotel = {
+				//eigenschaften
+				//schüssel:wert
+				name:'grüner Baum',
+				zimmer:40,
+				gebucht:25,
+
+				//methoden
+				//eine funktion die mit dem objekt verbunden ist
+				ihreWahl:function() {
+					return this.zimmer - this.gebucht;
+					// mit this ist dieses objekt gemeint(hotel) 
+;				}
+			}
+
+			let auslese = hotel.ihreWahl();
+				// auslese = hotel.name;
+				// auslese = hotel.zimmer;
+				// auslese = hotel.gebucht;
+
+				document.querySelector('#demo').innerHTML = auslese;
+		</script>
+	</body>
+</html>

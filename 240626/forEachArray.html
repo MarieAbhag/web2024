@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>schleifen</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+		
+		<script>
+			function ready() {
+				let text = '';
+				const elements = [2,4,6,8];
+				
+				elements.forEach(sonne);
+
+				function sonne(item,index,array) {
+
+					console.log(item);
+					// console.log(index);
+					// console.log(array);
+
+				}
+
+				document.querySelector('#demo').innerHTML = text;
+			}
+
+			document.addEventListener('DOMContentLoaded',ready);
+
+			// der schleifenkörper wird solange wiederholt ausgeführt bis die bedingung nicht mehr erfüllt ist 
+			//wird verwendet wenn die anzahl der durchläufe bekannt ist
+		</script>
+	</body>
+</html>

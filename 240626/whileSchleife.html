@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>schleifen</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+		
+		<script>
+			function ready() {
+				let text = '';
+				let i = 0;
+				
+				while( i < 10 ) {
+					text += '<br> die zahl lautet ' +i;
+					i++; 
+				}
+
+				document.querySelector('#demo').innerHTML = text;
+			}
+
+			document.addEventListener('DOMContentLoaded',ready);
+
+			// um eine sog. endlosSchleife zu vermeiden
+			// muss ein abbruchKriterium eingebaut werden 
+			// dies geschieht durch erhöhung des iterators ( i )
+			// ist die bedingung nicht mehr erfüllt bricht die schleife ab
+		</script>
+	</body>
+</html>
