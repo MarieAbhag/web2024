@@ -2,3 +2,8 @@ aufgabe :
 bitte die beispiele ablauf der for-anweisung 
 sowie forEach aus mediaEvent testen
 
+aufgabe für heute mittag:
+createElement festigen,
+forOfLoop anschauen z.B. in w3schools
+welche möglichkeiten gibt es noch, Elemente zu erstellen
+tipp: hat irgendwas mit htmlTags zu tun
