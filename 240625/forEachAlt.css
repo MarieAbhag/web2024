@@ -1,40 +1,22 @@
-<!doctype html>
-<html>
-	<head>
+.testforeach {
+	
+	display: flex;
+	flex-wrap: wrap;
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>sprachkern</title>
+	text-align: center;
+	max-width: 600px;
+	gap: 10px;
+	
+	
+}
+figure {
+	margin-left: 0;
+	margin-right: 0;
 
-	</head>
+}
+.testforeach img {
 
-
-	<body>
-			<!-- <img src="img/blubber.png" width="400" height="300" loading="lazy"> -->
-			<!-- <figcaption>ich bin die dordrecht</figcaption> -->
-
-			<div class="bildtraeger">bildtraeger</div>
-
-			<script>
-				const traeger 	= document.querySelector('.bildtraeger');
-
-				// elemente bauen 
-				const newFigure = document.createElement('figure');
-				const img		= document.createElement('img');
-				const figcaption= document.createElement('figcaption');
-
-				figcaption.textContent = "ich bin die dordrecht";
-				img.src    = "img/blubber.png"
-				img.width  = 400;
-				img.height = 300;
-				img.setAttribute('loading','lazy');
-
-				// an das figure werden img und figcaption angehängt
-				newFigure.append(img,figcaption);
-
-				//"alles" wird an den trager angehängt
-				traeger.append(newFigure);
-			</script>
-
-	</body>
-</html>
+	width: 190px;
+	height: 190px;
+	border: 1px solid gainsboro;
+}

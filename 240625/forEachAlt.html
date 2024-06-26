@@ -5,36 +5,38 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>sprachkern</title>
+		<link rel="stylesheet" href="forEachAlt.css">
 
 	</head>
 
 
 	<body>
-			<!-- <img src="img/blubber.png" width="400" height="300" loading="lazy"> -->
-			<!-- <figcaption>ich bin die dordrecht</figcaption> -->
+			<div class="testforeach">
+				<figure class="nodeList">
+					<img src="img/donut.png" alt="donut">
+				</figure>
 
-			<div class="bildtraeger">bildtraeger</div>
+				
+				<figure class="nodeList">
+					<img src="img/toast.png" alt="toast">
+				</figure>
+
+			
+				<figure class="nodeList">
+					<img src="img/melone.png" alt="melone">
+				</figure>	
+			</div>
 
 			<script>
-				const traeger 	= document.querySelector('.bildtraeger');
+				const elments = document.querySelectorAll('.nodeList img');
 
-				// elemente bauen 
-				const newFigure = document.createElement('figure');
-				const img		= document.createElement('img');
-				const figcaption= document.createElement('figcaption');
-
-				figcaption.textContent = "ich bin die dordrecht";
-				img.src    = "img/blubber.png"
-				img.width  = 400;
-				img.height = 300;
-				img.setAttribute('loading','lazy');
-
-				// an das figure werden img und figcaption angehängt
-				newFigure.append(img,figcaption);
-
-				//"alles" wird an den trager angehängt
-				traeger.append(newFigure);
+				elments.forEach(function(img,index){
+					let figcaption = document.createElement("figcaption");
+					figcaption.textContent = img.getAttribute("alt");
+					img.parentElement.appendChild(figcaption);
+					console.log(img);
+					console.log(index);
+				})
 			</script>
-
 	</body>
 </html>
