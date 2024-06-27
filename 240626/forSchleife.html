@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>schleifen</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+		<!-- <ul class="beispiel">
+			<li id="one" class="warm">römer</li>
+			<li id="two" class="warm">etrusker</li>
+			<li id="three" class="warm">germanen</li>
+			<li id="four">valonen</li>
+			<li id="five">franzosen</li>
+			<li id="sechs">belgier</li>
+			<li id="sieben">niederländer</li>
+		</ul> -->
+		<script>
+			function ready() {
+				let text = '';
+
+				//schlüsselWort (bedingung) { ausführung}
+				for(let i = 0; i < 10; i++ ) {
+					text += '<br> die zahl lautet ' +i;
+				}
+
+				document.querySelector('#demo').innerHTML = text;
+			}
+
+			document.addEventListener('DOMContentLoaded',ready);
+
+			// der schleifenkörper wird solange wiederholt ausgeführt bis die bedingung nicht mehr erfüllt ist 
+			//wird verwendet wenn die anzahl der durchläufe bekannt ist
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>sprachkern</title>
+
+	</head>
+
+
+	<body>
+		<section id="content"></section>
+
+		<script>
+			const container = document.createElement('div');
+			const nav = document.createElement('nav');
+			nav.textContent = 'ich bin die nav';
+			container.append(nav);
+
+			const p = document.createElement('p');
+			p.textContent = 'ich bin das p';
+			
+			const span = document.createElement('span');
+			span.textContent = 'ich bin das span';
+
+
+			const inhalt = document.querySelector('#content');
+			inhalt.append(container);
+
+			container.append(p,span);
+		</script>
+	</body>
+</html>

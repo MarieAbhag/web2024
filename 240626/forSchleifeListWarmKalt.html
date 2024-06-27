@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>schleifen</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+		<ul class="beispiel">
+			<li id="one" class="warm">römer</li>
+			<li id="two" class="warm">etrusker</li>
+			<li id="three" class="warm">germanen</li>
+			<li id="four" class="kalt">valonen</li>
+			<li id="five" class="kalt">franzosen</li>
+			<li id="sechs" class="kalt">belgier</li>
+			
+		</ul>
+
+		<button onclick="nochda()">noch da</button>
+		<button onclick="nichtMehr()">nichtMehr</button>
+		<script>
+			
+			
+			function nochda() {
+				let warm = document.querySelectorAll('.warm');
+				let text = '';
+				
+				for(let i = 0; i < warm.length; i++ ) {
+					// text += 'hello<br>';
+					text += warm[i].textContent+'<br>';
+				}
+
+				document.querySelector('#demo').innerHTML = text;
+			}
+			function nichtMehr() {
+				let kalt = document.querySelectorAll('.kalt');
+				let text = '';
+				
+				
+				for(let i = 0; i < kalt.length; i++ ) {
+					// text += 'hello<br>';
+					text += kalt[i].textContent+'<br>';
+				}
+
+				document.querySelector('#demo').innerHTML = text;
+			}
+
+			
+		</script>
+	</body>
+</html>

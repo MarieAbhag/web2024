@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>sprachkern</title>
+		<link rel="stylesheet" href="css/forEachAlt.css">
+	</head>
+
+
+	<body>
+		<div class="testforeach">
+			<figure class="nodelist">
+				<img src="img/donut.png" alt="donut">
+			</figure>
+			
+			<figure class="nodelist">
+				<img src="img/toast.png" alt="toast">
+			</figure>
+			
+			<figure class="nodelist">
+				<img src="img/melone.png" alt="melone">
+			</figure>
+		</div>
+
+		<script>
+			const elements = document.querySelectorAll('.nodelist img');
+			
+			elements.forEach(function(img,index){
+				let figcaption = document.createElement("figcaption");
+				figcaption.textContent = img.getAttribute("alt");
+				img.parentElement.appendChild(figcaption);
+
+				// console.log(img);
+				// console.log(index);
+			});
+		</script>
+	</body>
+</html>

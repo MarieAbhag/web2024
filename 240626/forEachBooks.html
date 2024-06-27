@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>sprachkern</title>
+
+	</head>
+
+
+	<body>
+		<p id="demo"></p>
+		<script>
+			// ein array mit literatlObjekten
+			const books = [
+				{ autor:'Jane Auston'},
+				{ autor: 'Jared Diamond'},
+				{ autor: 'Dorothy L. Sayers'}
+			];
+
+			books.forEach(autoren);
+
+			function autoren(item) {
+				document.querySelector('#demo').innerHTML += item.autor + '<br>';
+			}
+		</script>
+
+	</body>
+</html>
