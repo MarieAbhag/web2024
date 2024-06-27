@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>miniGal</title>
+		<style>
+			figure { width:70vw; }
+			figure img { max-width: 100%; height: auto; }
+
+		
+			.klein {
+				width: 50vw;
+				height: auto;
+				
+				animation-name: fade;
+  				animation-duration: 2.5s;
+			}
+
+			@keyframes fade {
+  				from {opacity: .4}
+  				to {opacity: 1}
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<!-- startLeinwand -->
+		<figure>
+			<img src="img/Screenshot_543.png" alt="" id="leinwand" class="freutag">
+		</figure>
+
+		<h3 id="anzeigeVor"></h3>
+		<button id="zuruck">Back</button>
+		<button id="vor">Vor</button>
+		<button id="startStopp">StartStop</button>
+		<button class="anzeigen">anzeigen</buton>
+
+		<script src="js/miniGalKlariert.js"></script>
+	</body>
+</html>
