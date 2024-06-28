@@ -17,61 +17,47 @@ const anzeigeVor = document.querySelector('#anzeigeVor');
 const VOR = document.querySelector('#vor');
 const ZURUCK = document.querySelector('#zuruck');
 const STARTSTOPP = document.querySelector('#startStopp');
-const ANZEIGEN = document.querySelector('.anzeigen');
+
 
 //vergabe des events
 VOR.addEventListener('click', vor);
 ZURUCK.addEventListener('click', zuruck);
 STARTSTOPP.addEventListener('click', startStopp);
 
-// fkt.  die ein argument erwartet kapseln
-// in einer anonymen funktion
-// ANZEIGEN.addEventListener('click', function() {
-//     bildAnzeigen( 'Screenshot_285.png' );
-// });
 
-//oder man nimmt eine benannte funktion 'umweg'
-ANZEIGEN.addEventListener('click', umweg );
-function umweg() {
-    bildAnzeigen( 'Screenshot_285.png' );
-}
+// --------------ende der globalen variablen----------------------
 
-//einfacher zu removen
-// ANZEIGEN.removeEventListener('click', umweg );
-
-
-///////////bildAnzeigen funktion mit einem parameter/////////////////////////////
-
-// ich möchte ein bild namens 'Screenshot_285.png' aufrufen
-//bildAnzeigen( 'Screenshot_285.png' );
-
-function bildAnzeigen( bildname ) {
-    let bild = bildpfad + bildname;
-    leinwand.src = bild;
-}
-
+//erstellen einer funktion mit function als schlüsselwort plus namen plus rundKlammern
 
 
 
 function vor() {
     zaehler++;
     if( zaehler > bilder.length-2 ) {
-        
+        //zaehler = 0;         stelle den zaehler wieder auf 0
         VOR.removeEventListener('click', vor);  //remove entfernt den listener
 
         //setzen eines styles mittels js
         VOR.style.opacity = "0.2";
-        
+        // VOR.style.visibility  = "hidden";
+        // VOR.style.backgroundColor  = "orange";
      }
 
-    if( zaehler === 1 ){
+      if( zaehler === 1 ){
         ZURUCK.addEventListener('click', zuruck);
         ZURUCK.style.opacity = "1";
-    }
+      }
 
 
     let bild = bildpfad + bilder[zaehler];
     leinwand.src = bild;
+    // leinwand.classList.remove('klein');
+    leinwand.classList.add('klein');
+    // leinwand.style.animationName = "none";
+	// requestAnimationFrame(() => {
+	// 	leinwand.style.animationName = "";
+	// });
+    
     anzeigeVor.innerHTML = zaehler;
 }
 
@@ -81,6 +67,7 @@ function vor() {
 function zuruck() {
     zaehler--;
     if( zaehler <= 0 ) {
+        //zaehler = bilder.length-1;         stelle den zaehler wieder an das ende des array
         ZURUCK.removeEventListener('click', zuruck);
         ZURUCK.style.opacity = "0.2";
     }
@@ -108,6 +95,3 @@ function startStopp() {
         running = 0;
     }
 }
-
-
-

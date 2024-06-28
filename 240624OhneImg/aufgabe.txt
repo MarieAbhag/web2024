@@ -1,0 +1,8 @@
+aufgabe :
+bitte nachschlagen wie man
+addEventListener nutzt
+
+welche Domzugriff-Möglichkeiten gibt es 
+um auf elemente im html zuzugreifen ?
+
+document.getElement...

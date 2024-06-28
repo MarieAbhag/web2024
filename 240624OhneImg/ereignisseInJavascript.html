@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ereignisse in javascript</title>
+
+	</head>
+
+
+	<body>
+		<h3>UI-ereignisse</h3>
+		<ul>
+			<li>treten in der beutzerFläche des browsers auf</li>
+			<li>load - laden der seite</li>
+			<li>unload - eine neue seite anfordern</li>
+			<li>resize - verändern der fensterGröße</li>
+			<li>error - wenn ein fehler auftritt</li>
+			<li>scroll - wenn der inhalt gescrollt wird </li>
+		</ul>
+		<h3>tastaturEreignisse</h3>
+		<ul>
+			<li>keydown, keyup, keypress</li>
+		</ul>
+
+		<h3>mausEreignisse</h3>
+		<ul>
+			<li>click,dblclick,mousedown,mouseup,mouseover,mouseout,mouseenter,mouseleave</li>
+		</ul>
+
+		<h3>touchEreignisse</h3>
+		<ul>
+			<li>touchstart -> mousedown</li>
+			<li>touchmove -> mousemove</li>
+			<li>touchend -> mouseup</li>
+		</ul>
+
+		<p>element auswählen, aangabe des ereignisses, dode ausführen</p>
+		<p>=> nennt man eventHandling</p>
+
+		<p>steht im html</p>
+		<p onclick="vor()">vor</p>
+
+		 <button onclick="getElementById('demo').innerHTML = Date()">What is the time?</button>
+		<!-- <button id="demo" onclick="Date()">What is the time?</button> -->
+		 <h3 id="demo" onclick="myFunction()">Click me to change my color.</h3>
+
+		<p>diese stehen im javascript</p>
+		<p>element.onevent = funktionsname</p>
+		<p>window.onload = function(){ myScript }</p>
+		<p>element.addEventListener("click",function(){})</p>
+		<p>element.addEventListener("click", myFunction)</p>
+	</body>
+
+<!-- 
+	 <button id="demo">What is the time?</button>
+	<div id="output"></div>
+  
+	<script>
+	  Function to display the current date and time
+	  function showDate() {
+		const now = new Date(); Get current date and time
+		document.getElementById('output').innerHTML = now.toString(); // Display date and time
+	  }
+  
+	  Attach event listener to the button
+	  document.getElementById('demo').addEventListener('click', showDate);
+	</script>  -->
+</html>
