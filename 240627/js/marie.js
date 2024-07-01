@@ -9,6 +9,10 @@ let o = function ()
 o();
 
 
-let firstName = "Marie", lastName= "louise", age=31;
-
-console.log("firstsname"+ ""+ "lastName" + ""+ is +""+  + "age")
+// let firstName = "Marie", lastName= "louise", age=31;
+let x = {
+    firstName = "Marie",
+    lastName= "louise",
+    age=31
+};
+console.log(x);

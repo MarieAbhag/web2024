@@ -1,0 +1,10 @@
+aufgabe :
+bitte testen :
+templateLiteral, insertAdjacent
+
+für heute nachmittag:
+zwei elemente erstellen auf die ich klicken kann
+ein element in die die gal angezeigt werden soll
+eine externe scriptDatei
+in die js zwei arrays einfügen
+und auslesen
