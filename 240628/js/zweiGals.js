@@ -68,9 +68,10 @@ function galEins() {
     
     // inhalt removen 
     // remove content
-    while(inhalt.hasChildNodes()) {
-        inhalt.removeChild
-    }
+    // ------------------------------------------------------------------------------------
+    // while(inhalt.hasChildNodes()) {
+    //     inhalt.removeChild
+    // }
 
     while(inhalt.hasChildNodes()) {
         inhalt.removeChild(inhalt.firstChild);
@@ -79,13 +80,14 @@ function galEins() {
     // oder mit inhalt.innerHtml = ""
     // oder mit div.remove()
     // oder mit replaceWith
-
+// -----------------------------------------------------------------------------------------------------------
 
 
     // welches array möchte ich nutzen
     // which array do I want to use
     for( const i of arrayEins ) {
         //kreieren der elmente
+        //creating the elements
         let fig = document.createElement('figure');
         let cap = document.createElement('figcaption');
         let img = document.createElement('img');
