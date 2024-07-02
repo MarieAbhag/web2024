@@ -4,6 +4,7 @@ function ladeBilder(json,id) {
     xhr.onload = function() {
         if( xhr.readyState === 4 && xhr.status === 200) {
             const obj = JSON.parse(xhr.responseText);
+            console.log(obj);
             const arr = obj.ereignisse;
             const frag = document.querySelector(id);
 
@@ -14,20 +15,30 @@ function ladeBilder(json,id) {
                 let bild = document.createElement('img');
                 let span = document.createElement('span');
 
+                span.innerText = i.location;
+                bild.src       = i.map;
+
                 divi.append(span,bild);
                 frag.append(divi);
             }
          }
     }
 
-    xhr.open('GET','extern/'+json, true);
+    xhr.open('GET','extern/'+json,true);
     xhr.send(null);
 }
 
 document.querySelector('#eins').addEventListener('click', function() {
-    ladeBilder('woche.json','#contant'); 
+    ladeBilder('woche.json','#content'); 
 });
 document.querySelector('#zwei').addEventListener('click', function() {
-    ladeBilder('woche2.json','#contant2'); 
+    ladeBilder('woche2.json','#content2'); 
 });
 // loadText();
+
+
+// objekte auslesen
+// kurs.title
+// oder
+// let vari = 'geschenkt';
+// kurs[vari];

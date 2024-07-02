@@ -1,0 +1,15 @@
+{
+    "galerie1":[
+        { "location":"Silbersee", "map":"img/eins.png" },
+        { "location":"Edersee", "map":"img/zwei.png" },
+        { "location":"Nordsee", "map":"img/drei.png" }
+        
+    ],
+
+    "galerie2":[
+        { "location":"Nordsee", "map":"img/vier.png" },
+        { "location":"Ostsee", "map":"img/fuenf.png" },
+        { "location":"Atlantik", "map":"img/sechs.png" }
+        
+    ]
+}

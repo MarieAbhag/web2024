@@ -1,0 +1,10 @@
+{
+    
+"ereignisse":[
+        { "location":"Nordsee", "map":"img/vier.png" },
+        { "location":"Ostsee", "map":"img/fuenf.png" },
+        { "location":"Atlantik", "map":"img/sechs.png" }
+        
+    ]
+}
+

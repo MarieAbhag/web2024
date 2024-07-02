@@ -1,0 +1,17 @@
+.testforeach {
+    display:flex;
+    justify-content: space-around;
+    max-width:600px;
+    text-align:center;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.testforeach img {
+    width: 190px;
+    height: 190px;
+    border: 1px solid gainsboro;
+}
