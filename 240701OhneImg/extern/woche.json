@@ -1,0 +1,28 @@
+{
+    "kommentare":"sind in json nichtzulässig",
+    "name":"oliver",
+    "beruf":"dozent",
+    "bild":"gibt es nicht",
+    "komm": "hello Marie",
+    
+    "montag": {
+        "wetter":"wechselhaft",
+        "temp":"17",
+        "aussicht":"sturm"
+    },
+
+    "ereignisse":[
+        {
+            "location":"Ammersee",
+            "map":"img/vier.png"
+            
+        },
+
+        { "location":"Silbersee", "map":"img/fuenf.png" },
+        { "location":"Edersee", "map":"img/sechs.png" },
+        { "location":"Nordsee", "map":"img/eins.png" },
+        { "location":"Ostsee", "map":"img/zwei.png" },
+        { "location":"Forgensee", "map":"img/drei.png" }
+    ]
+}
+
