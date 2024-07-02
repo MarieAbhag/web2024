@@ -1,3 +1,0 @@
-aufgabe:
-erweitert bitte eure jsonDatei mit einem kommentar
-und lasst euch diesen kommentar ebenfalls ausgeben...
