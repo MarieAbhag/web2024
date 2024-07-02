@@ -1,0 +1,10 @@
+{
+    "ereignisse":[
+      
+        { "location":"Silbersee", "map":"img/fuenf.png" },
+        { "location":"Edersee", "map":"img/sechs.png" },
+        { "location":"Nordsee", "map":"img/fuenf.png" }
+      
+    ]
+}
+

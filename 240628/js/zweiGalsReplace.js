@@ -1,12 +1,5 @@
 // erstellen der arrays für jede gal eines 
-// create the arrays one for each gal
-// const name = [
-// {
-//     name:"";
-//     map:"";
-//     come:""
-// }
-// ]
+
 const arrayEins = [
     {
         location:"bodensee",
@@ -48,14 +41,11 @@ const arrayZwei = [
 ]
 
 // auswählen der elemente 
-// selecting the elements
 const eins = document.querySelector('.eins');
 const zwei = document.querySelector('.zwei');
 const inhalt = document.querySelector('#content');
 
 //vergabe der events
-//assignment of events
-//mohmt kol event
 eins.addEventListener('click', galEins );
 zwei.addEventListener('click', galZwei );
 
@@ -67,12 +57,6 @@ zwei.addEventListener('click', galZwei );
 function galEins() {
     
     // inhalt removen 
-    // remove content
-    // ------------------------------------------------------------------------------------
-    // while(inhalt.hasChildNodes()) {
-    //     inhalt.removeChild
-    // }
-
     while(inhalt.hasChildNodes()) {
         inhalt.removeChild(inhalt.firstChild);
     }
@@ -80,14 +64,12 @@ function galEins() {
     // oder mit inhalt.innerHtml = ""
     // oder mit div.remove()
     // oder mit replaceWith
-// -----------------------------------------------------------------------------------------------------------
+
 
 
     // welches array möchte ich nutzen
-    // which array do I want to use
     for( const i of arrayEins ) {
         //kreieren der elmente
-        //creating the elements
         let fig = document.createElement('figure');
         let cap = document.createElement('figcaption');
         let img = document.createElement('img');
@@ -109,9 +91,9 @@ function galEins() {
 function galZwei() {
 
     // inhalt removen 
-    while(inhalt.hasChildNodes()) {
-        inhalt.removeChild(inhalt.firstChild);
-    }
+    // while(inhalt.hasChildNodes()) {
+    //     inhalt.removeChild(inhalt.firstChild);
+    // }
 
 
 
@@ -131,8 +113,8 @@ function galZwei() {
         //anhängen an das figureElement
         fig.append( img, cap, com);
 
-        //anhängen an den content
-        inhalt.append( fig );
+        document.querySelector('#content figure').replaceWith(fig);
+        
     }
 }
 

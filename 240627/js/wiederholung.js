@@ -138,3 +138,50 @@ const arr = [
         map:'img/eins.jpg'
     }
 ]
+
+// --------------------------------------marie----------------------
+//create = erstellen
+
+const arrayEins = [
+    {
+        location:"silbersse",
+        map:"img7eins.png",
+        com:"sonne"
+    }
+]                    //Array {} lw homa 7aga btswi 7aga 
+
+const arrayZins = [
+    2,4,6,8,10         //Array [] lw homa arkam
+] 
+
+const eins = document.querySelector('.eins'); //auswählen element = select 
+
+//vergabe der events = allocation of events (t5sess)
+eins.addEventListener('click', galEins);
+
+//welche ele möchte ich erstellen
+
+function galEins() {
+    const elem = document.querySelector('#content');
+//verschiedene schleifen = different loops
+    function galEins(){
+        //inhallt removen = content
+        while(inhalt.hasChildNodes()) {
+            inhalt.removeChild(inhslt,firstChild);
+        }
+        //oder mit inhalt.innerHTML = ""
+        //oder mit replace = altnativ
+    }
+    //welches array möchtet nutzen
+    for (const i of arr){
+        //kreieren der elment = create
+        let fig = document.createElement('.eins');
+        //füllen mit text iund src
+        cap.innerText = i.location;
+        //anhängen an des figureElmentz = append
+        fig.append( img, cap, com);
+        //anhängen an den content
+        inhalt.append( fig);
+    }
+}
+//angebt = stated = mo3ln
