@@ -8,6 +8,8 @@ fruits.push("Kiwi");                    //fügt ein neues element ein
 fruits.shift();                         //entfernt ein element
 fruits.splice(2, 0, "Lemon", "Kiwi");   //index remove element element
 fruits.splice(2, 2);                    //index + removen
+console.log(fruits);
+// anz.innerHTML = fruits;
 
 // verbinden(concat) von arrays
 const myGirls = ["Cecilie", "Lone"];
@@ -15,6 +17,7 @@ const myBoys = ["Emil", "Tobias", "Linus"];
 const myHomys = ["Horst", "Inge", "snoopy"];
 
 const myChildren = myGirls.concat(myBoys,myHomys);
+// anz.innerHTML = myChildren;
 
 //nicht destruktiv
 const months = ["Jan", "Feb", "Mar", "Apr"];
@@ -46,7 +49,7 @@ let alben = [
 
 let before2000 = alben.filter(
     (   //eine callbackFunction
-        album,       //das jeweilige element
+        alben       //das jeweilige element
         //index,       index des elementes im array - optional
         //alben        //das gesamte array - optional
     ) => {
@@ -56,6 +59,8 @@ let before2000 = alben.filter(
         // ... die vor 2000 veröffentlicht wurden.
     }
 )
+
+console.log(before2000);
 
 const produkte = [
 	{"art": "Buch", "no": 1724, "price": "3.75", "lager": 27},
@@ -104,6 +109,7 @@ const json = [
 
 //neues array namens bilder
 let bilder = json.map(a => a.map);
+console.log(bilder);
 
 for(const item of bilder) {
     let img = document.createElement('img');
@@ -114,10 +120,10 @@ for(const item of bilder) {
 // --------------------------------find-------------------------------------
 
 let rating = json.find( elem => elem.rating > 3);
-console.log(rating);
+// console.log(rating);
 
 // zeigt nur das erste gefundene element an 
 // will man suchen - keine schlechte Methode
 
 
-anz.innerHTML = rating;
+// anz.innerHTML = rating;
