@@ -4,10 +4,10 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>objectArray</title>
+		<title>objectarray</title>
 		<style>
-			img {
-				width:50vw;
+			img{
+				width: 50vw;
 				height: auto;
 			}
 		</style>
@@ -15,21 +15,36 @@
 
 
 	<body>
-
-			<div>
-				<div></div>
-				afterend
-			</div>
-
-
-
-
-			
-
-		<h4 class="forof">forof</h4>
-		<h4 class="foreach">foreach</h4>
-
 		<section id="content"></section>
-		<script src="js/objectArray.js"></script>
+		<script>
+			let arr = [
+				{
+					location:"silbersee",
+					map:"img/vier.png"
+
+				},
+
+				{
+					location:"edersee",
+					map:"img/fuenf.png"
+
+				},
+
+				{
+					location:"silbersee",
+					map:"img/sechs.png"
+
+				}
+			]
+			function auslese() {
+				const elem = document.querySelector('#content');
+				for( const i of arr) {
+					console.log(i);
+				}
+			}
+			auslese();
+
+		</script>
+	
 	</body>
 </html>

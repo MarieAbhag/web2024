@@ -21,34 +21,41 @@
 			
 		</ul>
 
-		<button onclick="nochda()">noch da</button>
-		<button onclick="nichtMehr()">nichtMehr</button>
+		<button onclick="nochda('bt1')">noch da</button>
+		<button onclick="nochda('bt2')">nichtMehr</button>
 		<script>
 			
 			
-			function nochda() {
-				let warm = document.querySelectorAll('.warm');
+			function nochda(nd) {
+				let sln = '.warm'
+				if(nd === 'bt1'){
+					sln = '.warm'
+				}else{
+					sln='.kalt'
+				}
+
+				let warm = document.querySelectorAll(sln);
 				let text = '';
 				
 				for(let i = 0; i < warm.length; i++ ) {
 					// text += 'hello<br>';
 					text += warm[i].textContent+'<br>';
 				}
-
+				//textContent = innerHTML
 				document.querySelector('#demo').innerHTML = text;
 			}
-			function nichtMehr() {
-				let kalt = document.querySelectorAll('.kalt');
-				let text = '';
+			// function nichtMehr() {
+			// 	let kalt = document.querySelectorAll('.kalt');
+			// 	let text = '';
 				
 				
-				for(let i = 0; i < kalt.length; i++ ) {
-					// text += 'hello<br>';
-					text += kalt[i].textContent+'<br>';
-				}
+			// 	for(let i = 0; i < kalt.length; i++ ) {
+			// 		// text += 'hello<br>';
+			// 		text += kalt[i].textContent+'<br>';
+			// 	}
 
-				document.querySelector('#demo').innerHTML = text;
-			}
+			// 	document.querySelector('#demo').innerHTML = text;
+			// }
 
 			
 		</script>
