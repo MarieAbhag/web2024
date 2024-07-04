@@ -11,7 +11,7 @@
 
 
 	<body>
-			<div class="testforeach">
+			<!-- <div class="testforeach">
 				<figure class="nodeList">
 					<img src="img/donut.png" alt="donut">
 				</figure>
@@ -24,19 +24,70 @@
 			
 				<figure class="nodeList">
 					<img src="img/melone.png" alt="melone">
-				</figure>	
+				</figure> -->
+				<table>
+					<tr>
+					  <th>Name</th>
+					  <th>Age</th>
+					</tr>
+				  </table> 	
 			</div>
 
 			<script>
-				const elments = document.querySelectorAll('.nodeList img');
+				const imgArr = ["img/donut.png","img/toast.png", "img/melone.png"]
+				const imgAlt = ["donut", "toast", "melone"]
 
-				elments.forEach(function(img,index){
-					let figcaption = document.createElement("figcaption");
-					figcaption.textContent = img.getAttribute("alt");
-					img.parentElement.appendChild(figcaption);
-					console.log(img);
-					console.log(index);
-				})
+				let figureArr = document.querySelectorAll('.nodeList');
+
+				for (let index = 0; index < figureArr.length; index++) {
+					const figure = figureArr[index];
+					const imgNew = document.createElement('img');
+					imgNew.src = imgArr[index];
+					imgNew.alt = imgAlt[index];
+					figure.appendChild(imgNew)
+				}
+
+
+
+
+
+
+
+				const elments = document.querySelectorAll('.nodeList img');
+				//FOREACH(item, index , arr)
+				//foreach(value(65), [0 or 1.....], name of the parent(numbers)
+				//var numbers[62, 22, 5, 0]
+
+				// elments.forEach(function(img,index){
+				// 	let figcaption = document.createElement("figcaption");
+				// 	figcaption.textContent = img.getAttribute("alt");
+				// 	img.parentElement.appendChild(figcaption);
+				// 	console.log(img);
+				// 	console.log(index);
+				// })
+
+				for (let i = 0; i < elments.length; i++) {
+					const e = elments[i];
+					let newCaption = document.createElement('figcaption')
+					newCaption.innerHTML = 'done'
+					newCaption.id = i
+					e.parentElement.appendChild(newCaption)
+
+				}
+
+
+
+
+
+				// elments.forEach(myH)
+				// function myH(img,index) {
+				// 	let figcaption = document.createElement("figcaption");
+				// 	figcaption.textContent = img.getAttribute("alt");
+				// 	img.parentElement.appendChild(figcaption);
+				// 	console.log(img);
+				// 	console.log(index);
+				// }
+
 			</script>
 	</body>
 </html>
