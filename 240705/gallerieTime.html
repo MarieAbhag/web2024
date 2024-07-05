@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gallerie</title>
+		
+
+	</head>
+
+
+	<body>
+		<img name="slide" width="400" height="200" />
+	
+	
+		<script>
+			//  ------------------------------------------------------
+			var i = 0; //start index or point
+			var images = [];
+			var time = 1000;
+
+			//image list
+			images[0]  = 'img/image1.png' ;
+			images[1]  = 'img/image2.png' ;
+			images[2]  = 'img/image3.png' ;
+
+			//change Image
+			function changeImg(){
+				document.slide.src = images[i];
+
+				if (i < images.length - 1){
+					i++;    
+				}else {
+					i= 0;
+				}
+				setTimeout("changeImg()", time);
+
+			}
+			window.onload  = changeImg;//  ------------------------------------------------------
+			var i = 0; //start index or point
+			var images = [];
+			var time = 1000;
+
+			//image list
+			images[0]  = 'img/image1.png' ;
+			images[1]  = 'img/image2.png' ;
+			images[2]  = 'img/image3.png' ;
+
+			//change Image
+			function changeImg(){
+				document.slide.src = images[i];
+
+				if (i < images.length - 1){
+					i++;    
+				}else {
+					i= 0;
+				}
+				setTimeout("changeImg()", time);
+
+			}
+			window.onload  = changeImg;
+		</script>
+	</body>
+</html>
