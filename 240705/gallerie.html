@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gallerie</title>
+		<link rel="stylesheet" href="./css/gallerie.css">
+		
+
+	</head>
+
+
+	<body>
+		<h2 style="text-align:center">Slideshow Gallery</h2>
+
+		<div class="container">
+			<div class="mySlides">
+				<div class="numberText"> 1/6 </div>
+				<img src="img/toast.png" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numberText"> 2/6 </div>
+				<img src="img/melone.png" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numberText"> 3/6 </div>
+				<img src="img/donut.png" style="width: 100%;">
+			</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+		<div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+
+		  
+		<div class="row">
+			<div class="column">
+			  <img class="demo cursor" src="img/toast.png" style="width:100%" onclick="currentSlide(1)" alt="Toast">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img/melone.png" style="width:100%" onclick="currentSlide(2)" alt="Melone">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="img/donut.png" style="width:100%" onclick="currentSlide(3)" alt="Donut">
+			</div>
+		</div>
+
+
+
+
+		<script src="./js/gallerie.js"></script>
+	</body>
+</html>
