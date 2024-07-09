@@ -1,4 +1,7 @@
 //traditionell eine anonyme funktion
+let don = () => {}
+
+
 function(a) {
     return a +200;
 }
@@ -8,6 +11,11 @@ function(a) {
 (a) => {
     return a +200;
 }
+
+// function AA(a) {
+//         return a +200;
+
+// }
 
 //bei nur einer zeile kann ich die geschweiften klammern weglassen
 (a) => return a +200;

@@ -1,0 +1,16 @@
+[
+    {
+        "title":"grau",
+        "imgPath":"img/beach/a.png"
+    },
+
+    {
+        "title":"blau",
+        "imgPath":"img/beach/b.png"
+    },
+
+    {
+        "title":"knapp",
+        "imgPath":"img/beach/c.png"
+    }
+]
