@@ -1,0 +1,14 @@
+[
+    {
+        "name":"beach",
+        "dataPath":"extern/beach.json"
+    },
+    {
+        "name":"grimaud",
+        "dataPath":"extern/grimaud.json"
+    },
+    {
+        "name":"mare",
+        "dataPath":"extern/mare.json"
+    }
+]

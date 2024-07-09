@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>asyncAwait</title>
+		<style>
+			.wrap {
+				display:flex;
+				justify-content: space-around;
+				margin-left:auto;
+				margin-right:auto
+			}
+
+			span {
+				font-size:22px;
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<p id="anzeige"></p>
+		<div class="wrap">
+			<div class="countthem">
+				<div class="counterS"><span>timeout</span></div>
+				<button class="buttonS">bis 5 zählen</button>
+			</div>
+			
+			<div class="countthem">
+				<div class="counterA"><span>await</span></div>
+				<button class="buttonA">bis 5 zählen</button>
+			</div>
+		</div>
+
+		<script src="js/asynAwait.js"></script>
+	</body>
+</html>

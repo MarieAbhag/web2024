@@ -1,0 +1,6 @@
+async aufgabe:
+
+    await wiederholen von fetch und forEach
+    await nachbau der fetchForEachDatei
+    await einlesen async await
+    await testen von async|await
