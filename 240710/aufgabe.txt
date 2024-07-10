@@ -1,0 +1,5 @@
+aufgabe:
+
+wie müssten meine jsonDateien aussehen
+und mit welchen methoden müsste ich arbeiten
+wenn ich zwei gallerien bauen möchte ???
