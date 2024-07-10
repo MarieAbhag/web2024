@@ -1,0 +1,12 @@
+{
+
+
+    "ereignisse":[
+        { "location":"heute", "map":"img/vier.png" },
+        { "location":"morgen", "map":"img/fuenf.png" },
+        { "location":"übermorgen", "map":"img/sechs.png","pfad":"ausgehend von der ladenden datei" },
+        { "location":"egal", "map":"img/eins.png" },
+        { "location":"was", "map":"img/zwei.png" },
+        { "location":"hier drin steht", "map":"img/drei.png" }
+    ]
+}
