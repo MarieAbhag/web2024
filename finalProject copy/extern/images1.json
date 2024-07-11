@@ -1,0 +1,12 @@
+
+{
+
+
+    "images":[
+        { "title":"Bild 1", "imgPath":"img/beach/a.png","description": "Beschreibung für Bild 1"  },
+        { "title":"Bild 2", "imgPath":"img/beach/a.png","description": "Beschreibung für Bild 2"  },
+        { "title":"Bild 3", "imgPath":"img/beach/a.png","description": "Beschreibung für Bild 3"  }
+    ]
+    
+
+}
