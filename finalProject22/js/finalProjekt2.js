@@ -1,31 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const gallery = document.getElementById('gallery');
-    const loadMoreButton = document.getElementById('loadMore');
-    let page = 1;
+const url = 'https://aws.random.cat/meow'
+const url2 = "https://random.dog/fb5524fa-28f5-42e2-a60c-ddc413f099d1.jpg"
+const cat_result = document.getElementById('cat_result');       
+const dog_result= document.getElementById('dog_result');
+const cat_btn = document.getElementById('cat_btn');
+const dog_btn = document.getElementById('dog_btn');
 
-    function loadImages(page) {
-        fetch(`extern/images${page}.json`)
-            .then(response => response.json())
-            .then(data => {
-                data.images.forEach(image => {
-                    const div = document.createElement('div');
-                    div.className = 'gallery-item';
-                    div.innerHTML = `
-                        <img src= "img/beach/a.png" "{alt="${image.title}">
-                        <p>${image.title}</p>
-                        <p>${image.description}</p>
-                    `;
-                    gallery.appendChild(div);
-                });
-            })
-            .catch(error => console.error('Error loading images:', error));
-    }
+cat_btn .addEventListener('click' , getRandomCat);
+// dogBtn .addEventListener('click' , getRandomdog);
 
-    loadMoreButton.addEventListener('click', function() {
-        page++;
-        loadImages(page);
-    });
-
-    // Initial load
-    loadImages(page);
-});
+function getRandomCat() {
+    fetch('https://aws.random.cat/meow')
+        .then(res => res.json())
+        .then(data => {
+            cat_result.innerHTML = `<img
+            src="${data.file}"/>`
+        })
+}
