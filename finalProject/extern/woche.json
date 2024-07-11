@@ -1,0 +1,21 @@
+{
+
+
+    "galerie1":[
+        { "location":"Ammersee", "map":"img/vier.png" },
+        { "location":"Silbersee", "map":"img/fuenf.png" },
+        { "location":"Edersee", "map":"img/sechs.png","pfad":"ausgehend von der ladeneden datei" },
+        { "location":"Silbersee", "map":"img/eins.png" },
+        { "location":"Silbersee", "map":"img/zwei.png" },
+        { "location":"Silbersee", "map":"img/drei.png" }
+    ],
+    
+    "galerie2":[
+        { "location":"Ammersee", "map":"img/vier.png" },
+        { "location":"Silbersee", "map":"img/fuenf.png" },
+        { "location":"Edersee", "map":"img/sechs.png","pfad":"ausgehend von der ladeneden datei" },
+        { "location":"Silbersee", "map":"img/eins.png" },
+        { "location":"Silbersee", "map":"img/zwei.png" },
+        { "location":"Silbersee", "map":"img/drei.png" }
+    ]
+}
