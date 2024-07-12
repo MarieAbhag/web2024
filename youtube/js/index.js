@@ -49,38 +49,78 @@
 
 
 
-const myCheckBox = document.getElementById("myCheckBox");
-const visaBtn = document.getElementById("visaBtn");
-const masterCardBtn = document.getElementById("masterCardBtn");
-const payBalBtn = document.getElementById("payBalBtn");
-const mySubmit = document.getElementById("mySubmit");
-const subResult =document.getElementById("subResult");
-const paymentResult = document.getElementById("paymentResult");
+// const myCheckBox = document.getElementById("myCheckBox");
+// const visaBtn = document.getElementById("visaBtn");
+// const masterCardBtn = document.getElementById("masterCardBtn");
+// const payBalBtn = document.getElementById("payBalBtn");
+// const mySubmit = document.getElementById("mySubmit");
+// const subResult =document.getElementById("subResult");
+// const paymentResult = document.getElementById("paymentResult");
 
 
-mySubmit.onclick = function(){
+// mySubmit.onclick = function(){
 
-    if (myCheckBox.checked) {
-        subResult.textContent = "you are subscribed"
-    } else {
-        subResult.textContent = "you are not subscribed";
-    }
+//     if (myCheckBox.checked) {
+//         subResult.textContent = "you are subscribed"
+//     } else {
+//         subResult.textContent = "you are not subscribed";
+//     }
 
 
     
-    if (visaBtn.checked) {
-        paymentResult.textContent = "you choosed Visa"
+//     if (visaBtn.checked) {
+//         paymentResult.textContent = "you choosed Visa"
         
-    } else if (masterCardBtn.checked) {
-        paymentResult.textContent = "you choosed mastercard"
+//     } else if (masterCardBtn.checked) {
+//         paymentResult.textContent = "you choosed mastercard"
 
-    } else if (payBalBtn.checked) {
-        paymentResult.textContent = "you choosed paybal"
+//     } else if (payBalBtn.checked) {
+//         paymentResult.textContent = "you choosed paybal"
 
-    }else{
-        paymentResult.textContent = "you must choose payment"
-    }  
+//     }else{
+//         paymentResult.textContent = "you must choose payment"
+//     }  
 
 
     
+// }
+
+
+// let time = 16;
+
+// let message =time  >= 14 ? "good afternoon":"good morning";
+// console.log(message);
+
+
+// let day = 5 ;
+// switch(day){
+//     case 1 :
+//         console.log ("it is saturday"); 
+//     break;
+//     case 2 :
+//         console.log("it is sunday")
+//     break;
+
+//     default:
+//         console.log(`${day} is not correct`);
+// }
+
+let testScore = 92;
+let letterGrade;
+
+switch(true){
+    testScor
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
