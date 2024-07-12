@@ -105,13 +105,55 @@
 //         console.log(`${day} is not correct`);
 // }
 
-let testScore = 92;
-let letterGrade;
+// let testScore = 80;
+// let letterGrade;
 
-switch(true){
-    testScor
+// switch(true){
+//     case  testScore >= 90:
+//     letterGrade = "A";
+//     break;
+//     case testScore >= 82:
+//     letterGrade = "B"
+//     break;
 
-}
+//     default:
+//     letterGrade = "you didnot get anything";
+// }
+
+// console.log(letterGrade)
+
+
+
+
+// const fullName = "Bro code";
+
+// let firstName = fullName.slice(0,3);
+// console.log(firstName);
+
+
+
+
+const fullName = "Broseph Code";
+
+let firstName = fullName.slice(0, fullName.indexOf(" "));
+let lastName = fullName.slice(fullName.indexOf(" "));
+console.log(firstName);
+console.log(lastName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
