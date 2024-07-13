@@ -1,163 +1,135 @@
-// let age = 10;
-// console.log (`you are ${age} years old`);
-// let gpa = 2.1;
-// console.log(typeof gpa);
+function updateClock(){
+    const now = new Date();
+    let hours = now.getHours();
+    const pmOderAm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12 || 12;
+    hours = hours.toString().padStart(2, 0);
+    const minutes = now.getMinutes().toString().padStart(2, 0);
+    const seconds = now.getSeconds().toString().padStart(2, 0);
+        const timeString = `${hours}:${minutes}:${seconds}:${pmOderAm}`;
+        document.getElementById("clock").textContent = timeString;
+}
+updateClock();
+setInterval(updateClock, 1000)
+// --------------------------------fetch----------------------------------
+fetchData(); //11:21
+async function fetchData(){
+    try{
+        const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+        if (!response.ok) {
+            throw new Error("could not fetch resource")
+            
+        }
+        const data = await response.json();
+        const pokemonSprite = data.pokemonSprite.front_default;
+        imgElement.src= pokemonSprite;
+        imgElement.style.display = "block";
+        
+    }
+    catch(error){
+        console.error(error);
+    }
+}
 
 
-// let fullName = "Bro Code";
-// let age = 24;
-// let student = false;
-
-
-// document.getElementById("p1").textContent =` your Name is ${fullName}`;
-// document.getElementById("p2").textContent = age;
-// document.getElementById("p3").textContent = student; 
-
-
-// let students = 30;
-// students -=   1
-
-// console.log(students);
-
-// let userName;
-// userName = window.prompt("what is your favourite color?");
 
 
 
-// const decreaseBtn =document.getElementById("decreaseBtn");
-// const resetBtn =document.getElementById("resetBtn");
-// const increaseBtn =document.getElementById("increaseBtn");
-// const countLable = document.getElementById("countLable");
-// let count = 0;
 
-// increaseBtn.onclick = function(){
-//     count++;
-//     countLable.textContent=count;
 
+
+
+// fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+//     .then(response => response => {
+
+//         if (!response.ok) {
+//             throw new Error( "could not fetch resource")
+//         }
+//         return response.json();
+
+//     })
+//     .then(data => console.log(data))
+//     .catch(error => console.error(error));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const fs = require('fs');
+// const path = require('path');
+// const axios = require('axios');
+
+// const flagsDir = path.join(__dirname, 'flags');
+// if (!fs.existsSync(flagsDir)) {
+//     fs.mkdirSync(flagsDir);
 // }
 
-// resetBtn.onclick = function(){
-//     count=0;
-//     countLable.textContent = count;
-// }
+// // JSON data
+// const jsonData = [
 
-// decreaseBtn.onclick = function (){
-//     count--;
-//     countLable.textContent = count;
+// ];
 
-// }
+// const downloadImage = async (url, filepath) => {
+//     const response = await axios({
+//         url,
+//         method: 'GET',
+//         responseType: 'stream'
+//     });
+//     return new Promise((resolve, reject) => {
+//         const file = fs.createWriteStream(filepath);
+//         response.data.pipe(file);
+//         file.on('finish', () => {
+//             file.close(resolve);
+//         });
+//         file.on('error', (err) => {
+//             fs.unlink(filepath);
+//             reject(err.message);
+//         });
+//     });
+// };
 
+// const downloadAllFlags = async () => {
+//     for (let i = 0; i < jsonData.length; i++) {
+//         const { flag, country, code } = jsonData[i];
+//         const filename = `${i}.svg`;
+//         const filepath = path.join(flagsDir, filename);
 
+//         try {
+//             await downloadImage(flag, filepath);
+//             console.log(`Downloaded flag for ${country} to ${filepath}`);
+//         } catch (error) {
+//             console.error(`Error downloading flag for ${country}: ${error}`);
+//         }
 
-// const myCheckBox = document.getElementById("myCheckBox");
-// const visaBtn = document.getElementById("visaBtn");
-// const masterCardBtn = document.getElementById("masterCardBtn");
-// const payBalBtn = document.getElementById("payBalBtn");
-// const mySubmit = document.getElementById("mySubmit");
-// const subResult =document.getElementById("subResult");
-// const paymentResult = document.getElementById("paymentResult");
-
-
-// mySubmit.onclick = function(){
-
-//     if (myCheckBox.checked) {
-//         subResult.textContent = "you are subscribed"
-//     } else {
-//         subResult.textContent = "you are not subscribed";
+//         jsonData[i].flag = `./flags/${filename}`;
 //     }
 
+//     const updatedJsonPath = path.join(__dirname, 'extern/updated_countries.json');
+//     fs.writeFileSync(updatedJsonPath, JSON.stringify(jsonData, null, 2));
+//     console.log(`Updated JSON data saved to ${updatedJsonPath}`);
+// };
 
-    
-//     if (visaBtn.checked) {
-//         paymentResult.textContent = "you choosed Visa"
-        
-//     } else if (masterCardBtn.checked) {
-//         paymentResult.textContent = "you choosed mastercard"
-
-//     } else if (payBalBtn.checked) {
-//         paymentResult.textContent = "you choosed paybal"
-
-//     }else{
-//         paymentResult.textContent = "you must choose payment"
-//     }  
-
-
-    
-// }
-
-
-// let time = 16;
-
-// let message =time  >= 14 ? "good afternoon":"good morning";
-// console.log(message);
-
-
-// let day = 5 ;
-// switch(day){
-//     case 1 :
-//         console.log ("it is saturday"); 
-//     break;
-//     case 2 :
-//         console.log("it is sunday")
-//     break;
-
-//     default:
-//         console.log(`${day} is not correct`);
-// }
-
-// let testScore = 80;
-// let letterGrade;
-
-// switch(true){
-//     case  testScore >= 90:
-//     letterGrade = "A";
-//     break;
-//     case testScore >= 82:
-//     letterGrade = "B"
-//     break;
-
-//     default:
-//     letterGrade = "you didnot get anything";
-// }
-
-// console.log(letterGrade)
-
-
-
-
-// const fullName = "Bro code";
-
-// let firstName = fullName.slice(0,3);
-// console.log(firstName);
-
-
-
-
-const fullName = "Broseph Code";
-
-let firstName = fullName.slice(0, fullName.indexOf(" "));
-let lastName = fullName.slice(fullName.indexOf(" "));
-console.log(firstName);
-console.log(lastName);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// downloadAllFlags();
 
 
 

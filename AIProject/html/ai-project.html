@@ -1,0 +1,207 @@
+<!doctype html>
+<!-- dokumentenTyp html5 -->
+<!-- mit strg + # ->einen kommentar -->
+<html lang="de">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AI Project</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="../css/ai-project.css" rel="stylesheet">
+	</head>
+   <body>
+	<!-- ------------------------------Navigation----------------------------------------------- -->
+		<nav>
+			<div class="nav-item" onclick="onNavItemClicked('home')">
+				<div class="nav-item-icon" > 
+					<i class="fa fa-fw fa-home"></i>
+				</div>
+				<div class="nav-item-title">
+					Home
+				</div>
+			</div>
+			<div class="nav-item" onclick="onNavItemClicked('about')">
+				<div class="nav-item-icon">
+					<i class="fa fa-handshake-o"></i>
+				</div>
+				<div  class="nav-item-title">
+					About
+				</div>
+			</div>
+			<div class="nav-item" onclick="onNavItemClicked('news')">
+				<div class="nav-item-icon">
+					<i class="fa fa-newspaper-o"></i>
+				</div>
+				<div  class="nav-item-title">
+					News
+				</div>
+			</div>
+			<div class="nav-item" onclick="onNavItemClicked('contact')">
+				<div class="nav-item-icon">
+					<i class="fa fa-fw fa-envelope"></i>
+				</div>
+				<div class="nav-item-title">
+					Contact
+				</div>
+			</div>
+		</nav>
+		<!-- --------------------------------MainContainer--------------------------------------- -->
+
+		<div class="container">
+		<!-- --------------------------------HomeSection--------------------------------------- -->	
+			<div class="home" id="home">
+				<div class="text">
+					<h1>
+						Robots Are The Future
+					</h1>
+					<p>
+						Robots aren't just tools; they are the architects of our future. 
+						As we integrate robotics into more facets of our lives, from healthcare and manufacturing to daily chores, 
+						they transform not only how we work and live but also how we envision the world of tomorrow. 
+					</p>
+				</div>
+			</div>
+		<!-- -------------------------------AboutSection-------------------------------------- -->
+			<div class="about" id="about">
+				<div class="about-item">
+				
+						<img class="about-item-image" src="../img/about1.jpg" alt="">
+					
+					<div class="about-item-text">
+						<h1>
+							Human-robot
+						</h1>
+						<p>In human-robot collaboration, the robot assists the human operator. This means: The machine does not replace the human, but complements his capabilities and relieves him of arduous tasks. These can include overhead work, for example, or the lifting of heavy loads. Autonomous, collaborative robots are also used to supply production workstations</p>
+					</div>
+				</div>
+			</div>
+		<!-- --------------------------------News--------------------------------------- -->
+			<div class="news" id="news">
+				<div class="full-image" id="fullImgBox">
+					<img src="img/_baac2c58-53a3-407e-9b06-abbcaecc42ed.jpg" id="fullImg" alt="VA">
+					<span onclick="closeFullImg()">X</span>
+				</div>
+				<div class="news-card" onclick="openFullImg('../img/news1.jpg')">
+					<img src="../img/news1.jpg" alt="VA">
+					<div class="card-text">
+						<h3>Great News #1</h3>
+						<p>Lorem ipsum dolor sit. Quod, labore excepturi cum culpa saepe, debitis beatae dolores natus sint reprehenderit in et! Maxime voluptatibus error, illum officiis pariatur magni ducimus.</p>
+					</div>
+
+				</div>	
+				<div class="news-card" onclick="openFullImg('../img/news2.jpg')">
+					<img src="../img/news2.jpg" alt="VA">
+					<div class="card-text">
+						<h3>Great News #2</h3>
+						<p>Lorem ipsum dolor sit. Quod, labore excepturi cum culpa saepe, debitis beatae dolores natus sint reprehenderit in et! Maxime voluptatibus error, illum officiis pariatur magni ducimus.</p>
+					</div>
+				</div>	
+				<div class="news-card"  onclick="openFullImg('../img/news3.jpg')" >
+					<img src="../img/news3.jpg" alt="VA">
+					<div class="card-text">
+						<h3>Great News #3</h3>
+						<p>Lorem ipsum dolor sit. Quod, labore excepturi cum culpa saepe, debitis beatae dolores natus sint reprehenderit in et! Maxime voluptatibus error, illum officiis pariatur magni ducimus.</p>
+					</div>
+				</div>		
+			</div>
+		<!-- --------------------------------ContactUs-------------------------------------- -->
+			<div class="contact" id="contact">
+				<div class="form-details">
+					<ul>
+						<li>
+							<div class="icons">
+								<!-- <img src="img/location.png" alt="VA"> -->
+								<i class="fa fa-location-arrow fa-2x"></i>
+							</div>
+							<div class="content">
+								<strong>Location</strong>
+								<p>Street name, City, Germany</p>
+							</div>
+						</li>
+						<li>
+							<div class="icons">
+								
+								<i class="fa fa-at fa-2x"></i>								
+							</div>
+							<div class="content">
+								<strong>Email</strong>
+								<p>email@domain.com</p>
+
+							</div>
+						</li>
+						<li>
+							<div class="icons">
+								
+								<i class="fa fa-mobile-phone fa-2x"></i>
+							</div>
+							<div class="content">
+								<strong>Call</strong>
+								<p>+00 000000 00000 </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="input-field">
+					<form>
+						<div class="from-groups">
+							<span class="from-label">Name</span>
+							<input type="text" required="required" class="form-control" placeholder="Your-Name">
+							
+						</div>
+
+						<div class="from-groups">
+							<span class="from-label">Email</span>
+							<input type="Email" required="required" class="form-control" placeholder="name@domin.com">
+							
+						</div>
+
+						<div class="from-groups">
+							<textarea
+							cols="30"
+							rows="10"
+							class="form-control"
+							required="required"
+							placeholder="Your Message......."></textarea>
+							
+						
+						</div>
+						<button class="send-botton">Send Message</button>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="social-icons">
+				<a href="#"><img src="../img/fb.png" alt="Facebook"></a>
+				<a href="#"><img src="../img/instgram.png" alt="Instagram"></a>
+				<a href="#"><img src="../img/twitter.png" alt="Twitter"></a>
+			</div>
+			<p>&copy; 2024 Marie Louise. All rights reserved.</p>
+		</footer>
+
+
+	<script>
+		// to scroll to the section by ID
+		function onNavItemClicked(id){
+			const element = document.getElementById(id);
+			element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+		}
+		// to open and close the Image 
+		var fullImgBox = document.getElementById("fullImgBox")
+		var fullImg = document.getElementById("fullImg")
+		function openFullImg(pic){
+			fullImgBox.style.display = "flex"
+			fullImg.src = pic;
+		}
+		function closeFullImg(){
+			fullImgBox.style.display = "none"
+		}
+		
+	</script>
+   </body>
+
+
+</html>
+
