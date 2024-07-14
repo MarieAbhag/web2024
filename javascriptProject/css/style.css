@@ -60,6 +60,7 @@ body{
     content: "";
     position: absolute;
     inset: 0;
+    z-index: -1;
     opacity: 0.1;
 
 }
@@ -81,7 +82,8 @@ body{
 .slider{
     position: relative;
     width: 100%;
-    margin: auto;
+    background-color: transparent;
+    margin-top: 100px;
     overflow: hidden ;
 /*     
     display: flex;
@@ -93,16 +95,93 @@ body{
    color: red;
    background-color: aquamarine; */
 }
-.slider img{
+.slide-show-title{
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: space-between;
+}
+#slide-show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.btns{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+}
+
+.btn{
+    width: 70px;
+    font-size:xx-large;
+}
+
+.slide-show-img{
+    width: 50dvw;
+    height: 60dvh;
 }
 img.displaySlide{
     display: block;
 }
+/* ------------------------image with location, language and flag ----- */
+.country-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 
+.info{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50dvw;
+    background-color: rgb(105, 105, 146);
+}
+.flag{
+    width: 50px;
+    height: 30px;
+}
+.icon{
+    width:40px;
+   height: 40px;
 
+}
+.info-item{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    justify-content: center;
+    align-items: center ;
+}
+h6{
+    font-size:medium;
+}
+.weather{
+    width: 100%;
+    margin-block: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+.weather-card{
+    width: 400px;
+    min-height: 50px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(21, 24, 147);
+    padding: 20px;
+}
 /* ------------------ Responsive design------------------ */
 
 @media (max-width: 560px) 

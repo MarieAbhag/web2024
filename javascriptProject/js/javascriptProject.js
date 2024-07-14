@@ -1,3 +1,5 @@
+let slideIndex = 0;
+let jsonFileContents; //[cont, con, ....]
 function updateClock(){
     const now = new Date();
     let hours = now.getHours();
@@ -11,166 +13,116 @@ function updateClock(){
 }
 updateClock();
 setInterval(updateClock, 1000)
-// --------------------------------fetch----------------------------------
-// fetchData(); //11:21
-// async function fetchData(){
-//     try{
-//         const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
-//             const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-//         if (!response.ok) {
-//             throw new Error("could not fetch resource")
-            
-//         }
-//         const data = await response.json();
-//         const pokemonSprite = data.pokemonSprite.front_default;
-//         imgElement.src= pokemonSprite;
-//         imgElement.style.display = "block";
-        
-//     }
-//     catch(error){
-//         console.error(error);
-//     }
-// }
-
-
-
-
-
-
-
-
-
-// fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
-//     .then(response => response => {
-
-//         if (!response.ok) {
-//             throw new Error( "could not fetch resource")
-//         }
-//         return response.json();
-
-//     })
-//     .then(data => console.log(data))
-//     .catch(error => console.error(error));
-
-
-// -----------------------------------------images---------------------------
-const slides = document.querySelectorAll(".slides img");
-let slideIndex = 0;
-let intervalId = null;
-document.addEventListener("DOMContentLoaded", initializeSlider)
-function initializeSlider(){
-
-    if (slides.length > 0) {
-        slides[slideIndex].classList.add("displaySlide");
-        intervalId  =  setInterval(nextSlide, 5000);
+function loadImages() {
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if( xhr.readyState === 4 && xhr.status === 200) {
+            let responseJson = JSON.parse(xhr.response);
+            jsonFileContents = responseJson.countries;
+            updateImagesDisplay()
+        }
     }
-    
-
-
-}    
-
-function showSlide(index){
-
-    if (index >= slides.length) {
-        slideIndex = 0 ;
-        
-    } else if (index < 0 ){
-        slideIndex = slides.length - 1;
-        
-    }
-    slides.forEach( slide => {
-        slide.classList.remove("displaySlide")
-    });
-        slides[slideIndex].classList.add("displaySlide")
+    xhr.open('GET','./extern/countries.json', true);
+    xhr.send(null);
 }
+loadImages();
+
+function updateImagesDisplay() { // slideIndex -> numer jsonFileContents[]
+    let country = jsonFileContents[slideIndex]
+    //country Name
+    document.getElementById("country-name").innerHTML =  country.countryName;
+    // main-image ->src
+    document.getElementById("main-image").src = country.imgSrc;
+    // location
+    document.getElementById("location").innerHTML = country.location;
+    // language
+    document.getElementById("language").innerHTML = country.language;
+    // capital
+    document.getElementById("capital").innerHTML =country.capital;
+    //flag ->src
+    document.getElementById("flag").src = country.flagImgSrc;
+
+}
+
 function prevSlide() {
+    // to check boundries of the array.
+    if (slideIndex == 0) {
+        return    
+    }
     slideIndex--;
+    updateImagesDisplay();
 }
 function nextSlide() {
+    // to check boundries of the array.
+    if (slideIndex == jsonFileContents.length -1) {
+        return  
+    }
     slideIndex++;
-    showSlide(slideIndex)
+
+    updateImagesDisplay();
 }
 
+async function getCountryWeather() {
+
+        
+    let mainWeatherDiv = document.getElementById("weather-details");
+    let child = mainWeatherDiv.lastElementChild;
+    while (child) {
+        mainWeatherDiv.removeChild(child);
+        child = mainWeatherDiv.lastElementChild;
+    }
+
+    let selectedCountry = document.getElementById("countries")
+    let wetterUrl ="http://api.openweathermap.org/data/2.5/weather?q="+selectedCountry.value +"&appid=2cee41a74613123afb2c3027ee5d7434&units=metric"
+
+    const weather = await fetch(wetterUrl,{
+        method:'GET'
+    })
+    const p = await weather.json()
+    console.log(p)
+    let weatherCardDiv = document.createElement("div");
+    weatherCardDiv.classList.add("weather-card");
+
+    // first div  -> temp 
+    let firstDiv = document.createElement("div");
+    firstDiv.style.display = "flex"
+    firstDiv.style.flexDirection = "column"
+    firstDiv.style.justifyContent = "center"
+    firstDiv.style.alignItems = "center"
+
+    let iconOfTemp =  document.createElement("img")
+    iconOfTemp.src = "./img/icons/location.png"
+    iconOfTemp.style.width = "40px";
+    let labelH2 = document.createElement("h2");
+    labelH2.innerHTML = "Temprature"
+    let valueH1 = document.createElement("h1");
+    valueH1.innerHTML = p.main.temp + "°C";
+    firstDiv.appendChild(iconOfTemp);
+    firstDiv.appendChild(labelH2);
+    firstDiv.appendChild(valueH1);
+
+    // second div  -> humidity
+    let secondDiv = document.createElement("div");
+    secondDiv.style.display = "flex"
+    secondDiv.style.flexDirection = "column"
+    secondDiv.style.justifyContent = "center"
+    secondDiv.style.alignItems = "center"
+
+    let iconOfHumadity=  document.createElement("img")
+    iconOfHumadity.src = "./img/icons/location.png"
+    iconOfHumadity.style.width = "40px";
+    let secondLabelH2 = document.createElement("h2");
+    secondLabelH2.innerHTML = "humadity"
+    let secondValueH1 = document.createElement("h1");
+    secondValueH1.innerHTML = p.main.humidity + "%";
+    secondDiv.appendChild(iconOfHumadity);
+    secondDiv.appendChild(secondLabelH2);
+    secondDiv.appendChild(secondValueH1);
 
 
+    weatherCardDiv.appendChild(firstDiv);
+    weatherCardDiv.appendChild(secondDiv);
 
+    mainWeatherDiv.appendChild(weatherCardDiv)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const fs = require('fs');
-// const path = require('path');
-// const axios = require('axios');
-
-// const flagsDir = path.join(__dirname, 'flags');
-// if (!fs.existsSync(flagsDir)) {
-//     fs.mkdirSync(flagsDir);
-// }
-
-// // JSON data
-// const jsonData = [
-
-// ];
-
-// const downloadImage = async (url, filepath) => {
-//     const response = await axios({
-//         url,
-//         method: 'GET',
-//         responseType: 'stream'
-//     });
-//     return new Promise((resolve, reject) => {
-//         const file = fs.createWriteStream(filepath);
-//         response.data.pipe(file);
-//         file.on('finish', () => {
-//             file.close(resolve);
-//         });
-//         file.on('error', (err) => {
-//             fs.unlink(filepath);
-//             reject(err.message);
-//         });
-//     });
-// };
-
-// const downloadAllFlags = async () => {
-//     for (let i = 0; i < jsonData.length; i++) {
-//         const { flag, country, code } = jsonData[i];
-//         const filename = `${i}.svg`;
-//         const filepath = path.join(flagsDir, filename);
-
-//         try {
-//             await downloadImage(flag, filepath);
-//             console.log(`Downloaded flag for ${country} to ${filepath}`);
-//         } catch (error) {
-//             console.error(`Error downloading flag for ${country}: ${error}`);
-//         }
-
-//         jsonData[i].flag = `./flags/${filename}`;
-//     }
-
-//     const updatedJsonPath = path.join(__dirname, 'extern/updated_countries.json');
-//     fs.writeFileSync(updatedJsonPath, JSON.stringify(jsonData, null, 2));
-//     console.log(`Updated JSON data saved to ${updatedJsonPath}`);
-// };
-
-// downloadAllFlags();
-
-
-
-
-
-
-
-
+}

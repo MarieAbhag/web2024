@@ -11,32 +11,69 @@
 
 
 	<body>
+	
 
 		<div class="header">
 			<img src="./img/CountryLogo.jpg">
-			<div id="logo">Time and Weather</div>
+			<div id="logo">
+				Time and Weather
+			</div>
 		</div>
 		<div id="clock-container">
 			<div id="clock">00:00:00</div>
 			<!-- <button onclick="getLocation" id="myClick">Get location</button> -->
 		</div>
-		<div>
-			<input type="text" id="pokemonName" placeholder="enter pokemon name">
-			<button onclick="fetchData()">Fetch Pokemon</button> <br>
-
-			<img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
-		</div>
 		<div class="slider">
-			<div class="slides">
-				<img src="img/CountryLogo.jpg" 	alt="Image #1">
-				<img src="img/CountryLogo.jpg"  alt="Image #2">
-				<img src="img/CountryLogo3.jpg" alt="Image #3">
-				<button class="prev" onclick="prevSlide()">&#10094</button>
-				<button class="next" onclick="nextSlide()">&#10095</button>
+			<div id="slide-show" class="slides">
+				<div class="country-card">
+					<div class="slide-show-title">
+						<button class="btn" onclick="prevSlide()">&#10094</button>
+						<h1 id="country-name"></h1>
+						<button class="btn" onclick="nextSlide()">&#10095</button>
+					</div>
+
+					
+					<img class="slide-show-img" id="main-image" src="" alt="">
+					<div class="info"> 
+						<div class="info-item">
+							<img class="icon" src="./img/icons/location.png" alt="">
+							 <h6 id="location"></h6>
+						</div>
+						<div class="info-item">
+							<img class="icon" src="./img/icons/language.png" alt="">
+							<h6 id="language"></h6>
+						</div>
+					
+						<div class="info-item">
+							<img class="icon" src="./img/icons/capital.png" alt="">
+							<h6 id="capital"></h6>
+						</div>
+						<img class="flag" id="flag" src="">
+					</div>
+				</div>
+				<div class="btns">
+					
+				</div>
 			</div>
+
 		</div>
+		<div class="weather">
+			<div class="weather-search">
+				<label for="countries">Choose a country:</label>
+				<select name="countries" id="countries">
+				  <option value="Egypt">Egypt</option>
+				  <option value="Germany">Germany</option>
+				  <option value="Japan">Japan</option>
+				  <option value="France">France</option>
+				  <option value="USA">USA</option>
+				</select>
+				<button onclick="getCountryWeather()"> Get Weather</button>
+			</div>
+			<div id="weather-details" class="weather-details">
 
-
+			</div>
+		
+		</div>
 
 
 		<script src="js/javascriptProject.js"></script>
