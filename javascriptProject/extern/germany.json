@@ -1,0 +1,7 @@
+{
+    "imgSrc":"../img/countryImages/germany-country.jpeg",
+    "location": "Europe",
+    "capital": "Berlin",
+    "flagImgSrc": "../img/flagImages/germany-flag.jpg",
+    "language":"German"
+}

@@ -12,25 +12,25 @@ function updateClock(){
 updateClock();
 setInterval(updateClock, 1000)
 // --------------------------------fetch----------------------------------
-fetchData(); //11:21
-async function fetchData(){
-    try{
-        const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
-            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-        if (!response.ok) {
-            throw new Error("could not fetch resource")
+// fetchData(); //11:21
+// async function fetchData(){
+//     try{
+//         const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+//             const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+//         if (!response.ok) {
+//             throw new Error("could not fetch resource")
             
-        }
-        const data = await response.json();
-        const pokemonSprite = data.pokemonSprite.front_default;
-        imgElement.src= pokemonSprite;
-        imgElement.style.display = "block";
+//         }
+//         const data = await response.json();
+//         const pokemonSprite = data.pokemonSprite.front_default;
+//         imgElement.src= pokemonSprite;
+//         imgElement.style.display = "block";
         
-    }
-    catch(error){
-        console.error(error);
-    }
-}
+//     }
+//     catch(error){
+//         console.error(error);
+//     }
+// }
 
 
 
@@ -53,7 +53,43 @@ async function fetchData(){
 //     .catch(error => console.error(error));
 
 
+// -----------------------------------------images---------------------------
+const slides = document.querySelectorAll(".slides img");
+let slideIndex = 0;
+let intervalId = null;
+document.addEventListener("DOMContentLoaded", initializeSlider)
+function initializeSlider(){
 
+    if (slides.length > 0) {
+        slides[slideIndex].classList.add("displaySlide");
+        intervalId  =  setInterval(nextSlide, 5000);
+    }
+    
+
+
+}    
+
+function showSlide(index){
+
+    if (index >= slides.length) {
+        slideIndex = 0 ;
+        
+    } else if (index < 0 ){
+        slideIndex = slides.length - 1;
+        
+    }
+    slides.forEach( slide => {
+        slide.classList.remove("displaySlide")
+    });
+        slides[slideIndex].classList.add("displaySlide")
+}
+function prevSlide() {
+    slideIndex--;
+}
+function nextSlide() {
+    slideIndex++;
+    showSlide(slideIndex)
+}
 
 
 

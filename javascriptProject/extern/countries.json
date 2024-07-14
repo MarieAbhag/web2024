@@ -1,0 +1,56 @@
+{
+    "countries":[
+        { 
+            "countryName":"Egypt",    
+            "imgSrc":"../img/countryImages/egypt-country.jpeg",
+            "location": "Africa",
+            "capital": "Cairo",
+            "flagImgSrc": "../img/flagImages/egypt-flag.jpg",
+            "language":"Arabic"
+        },
+        {
+            "countryName":"Germany",
+            "imgSrc":"../img/countryImages/germany-country.jpeg",
+            "location": "Europe",
+            "capital": "Berlin",
+            "flagImgSrc": "../img/flagImages/germany-flag.jpg",
+            "language":"German"   
+
+        },
+        {
+            "countryName" : "Japan",
+            "imgSrc":"../img/countryImages/japan-country.jpeg",
+            "location": "Asia",
+            "capital": "Tokyo",
+            "flagImgSrc": "../img/flagImages/japan-flag.jpg",
+            "language":"Japanise"
+        },
+        {
+            "countryName" : "Emirats",
+            "imgSrc":"../img/countryImages/emirates-country.jpeg",
+            "location": "Asia",
+            "capital": "Dubai",
+            "flagImgSrc": "../img/flagImages/emirates-flag.jpg",
+            "language":"Arabic"
+        },
+        {
+            "countryName" : "France",
+            "imgSrc":"../img/countryImages/france-country.jpeg",
+            "location": "Europe",
+            "capital": "Paris",
+            "flagImgSrc": "../img/flagImages/france-flag.jpg",
+            "language":"French"
+
+        },
+        {
+            "countryName" : "France",
+            "imgSrc":"../img/countryImages/usa-country.jpeg",
+            "location": "North-America",
+            "capital": "Washington D.C.",
+            "flagImgSrc": "../img/flagImages/usa-flag.jpg",
+            "language":"English"
+        }
+
+    ]
+
+}

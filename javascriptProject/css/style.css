@@ -1,10 +1,17 @@
 body{
     font-family: 'open Sans', sans-serif;
     flex-direction: column;
+
     display: flex;
     margin: 20px 0;
     background-color: rgb(16, 16, 27);
     color: azure;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
 /* --------------------------HEADER------------------------- */
 .header{
     display: flex;
@@ -15,7 +22,7 @@ body{
    align-items: center;
   
 }
-}
+
 .header img {
     width: 100%;
     height: 10h;
@@ -28,7 +35,7 @@ body{
     width: 100%;
     height: 30 vh;
     color: antiquewhite;
-    position: fixed;
+    position: absolute;
     background-color: rgba(36, 4, 4, 0.525);
     font-size: xx-large;
 
@@ -70,12 +77,34 @@ body{
     border: 2px solid black;
     margin: 20px;
 }
-
-
+#----------------------slider-------------------------------
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden ;
+/*     
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    max-height: 10vh;
+    justify-items: center;
+   align-items: center;
+   color: red;
+   background-color: aquamarine; */
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+}
 
 
 
 /* ------------------ Responsive design------------------ */
+
 @media (max-width: 560px) 
 and (-webkit-device-pixel-ratio : 2){
  

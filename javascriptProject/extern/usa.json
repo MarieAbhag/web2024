@@ -1,0 +1,7 @@
+{
+    "imgSrc":"../img/countryImages/usa-country.jpeg",
+    "location": "North-America",
+    "capital": "Washington D.C.",
+    "flagImgSrc": "../img/flagImages/usa-flag.jpg",
+    "language":"English"
+}
