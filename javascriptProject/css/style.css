@@ -44,6 +44,9 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
+#logo h1{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.639), 0 6px 20px 0 rgba(237, 235, 235, 0.576);
+}
 
 /* ----------------------------CLOCK--------------------------- */
 #clock-container{
