@@ -168,6 +168,8 @@ img.displaySlide{
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.639), 0 6px 20px 0 rgba(237, 235, 235, 0.576);
 }
 .icon{
+    display: flex;
+    flex-direction: row;
     width:40px;
    height: 40px;
 
@@ -262,9 +264,9 @@ h6{
 /* --------------------footer---------------------------------- */
 footer{padding: 15px;
 width: 100%;
-background: var(--dark-background);
+background-color: rgb(19, 17, 17);
 text-align: center;
-padding: var(--padding-small);
+padding: 15px;
 }
 .social-icons a {
 margin: 0 0.5em;
@@ -276,13 +278,13 @@ filter: invert(1);
 }
 footer p {
 margin-top: 1em;
-font-size: var(--font-size-smaller);
+font-size: large;
 color: #bbb;
 }
 
 /* ------------------ Responsive design------------------ */
 
-@media (max-width: 560px) 
+@media (max-width: 800px) 
 and (-webkit-device-pixel-ratio : 2){
  
     .nav-item-title{
@@ -300,7 +302,7 @@ and (-webkit-device-pixel-ratio : 2){
     }
 }
 
-@media (max-width: 800px) 
+@media (max-width: 1800px) 
 and (-webkit-device-pixel-ratio : 2){
     h1{
         font-size: 2rem;
