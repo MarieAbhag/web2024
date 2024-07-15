@@ -16,7 +16,7 @@
 		<div class="header">
 			<img src="./img/CountryLogo.jpg">
 			<div id="logo">
-				Time and Weather
+				<h1>Time and Weather</h1>
 			</div>
 		</div>
 		<div id="clock-container">
@@ -57,9 +57,11 @@
 			</div>
 
 		</div>
+		
 		<div class="weather">
+			<h1 id="highlight">Discover the weather with us.</h1>
 			<div class="weather-search">
-				<label for="countries">Choose a country:</label>
+				<label id="label" for="countries">Choose a country:</label>
 				<select name="countries" id="countries">
 				  <option value="Egypt">Egypt</option>
 				  <option value="Germany">Germany</option>
@@ -67,7 +69,7 @@
 				  <option value="France">France</option>
 				  <option value="USA">USA</option>
 				</select>
-				<button onclick="getCountryWeather()"> Get Weather</button>
+				<button id="clickbtn" onclick="getCountryWeather()"> Get Weather</button>
 			</div>
 			<div id="weather-details" class="weather-details">
 

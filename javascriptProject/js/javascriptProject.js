@@ -91,10 +91,18 @@ async function getCountryWeather() {
     firstDiv.style.alignItems = "center"
 
     let iconOfTemp =  document.createElement("img")
-    iconOfTemp.src = "./img/icons/location.png"
+    iconOfTemp.src = "./img/icons/temperature.png"
+    iconOfTemp.style.boxShadow = "4px 8px rgba(0, 07, 0, 0.839), 0 6px 20px 0 rgba(237, 235, 235, 0.576)";
     iconOfTemp.style.width = "40px";
     let labelH2 = document.createElement("h2");
     labelH2.innerHTML = "Temprature"
+    labelH2.style.backgroundColor = " rgba(40, 40, 42, 0.657)";
+    labelH2.style.backgroundColor = "grey";
+    labelH2.color = "grey";
+    labelH2.style.padding= "8px"
+     labelH2.style.border= "2px black solid"
+     labelH2.style.borderRadius = "50px";
+
     let valueH1 = document.createElement("h1");
     valueH1.innerHTML = p.main.temp + "°C";
     firstDiv.appendChild(iconOfTemp);
@@ -108,11 +116,16 @@ async function getCountryWeather() {
     secondDiv.style.justifyContent = "center"
     secondDiv.style.alignItems = "center"
 
-    let iconOfHumadity=  document.createElement("img")
-    iconOfHumadity.src = "./img/icons/location.png"
+    let iconOfHumadity =  document.createElement("img")
+    iconOfHumadity.src = "./img/icons/humidity.png"
     iconOfHumadity.style.width = "40px";
+    iconOfHumadity.style.boxShadow = "4px 8px rgba(0, 07, 0, 0.839), 0 6px 20px 0 rgba(237, 235, 235, 0.576)";
     let secondLabelH2 = document.createElement("h2");
-    secondLabelH2.innerHTML = "humadity"
+    secondLabelH2.innerHTML = "Humadity"
+    secondLabelH2.style.backgroundColor = " rgba(40, 40, 42, 0.657)";
+    secondLabelH2.style.padding= "8px"
+    secondLabelH2.style.border= "2px black solid"
+    secondLabelH2.style.borderRadius = "50px";
     let secondValueH1 = document.createElement("h1");
     secondValueH1.innerHTML = p.main.humidity + "%";
     secondDiv.appendChild(iconOfHumadity);
@@ -120,8 +133,64 @@ async function getCountryWeather() {
     secondDiv.appendChild(secondValueH1);
 
 
+
+        // third div  -> pressure 
+        let thirdDiv = document.createElement("div");
+        thirdDiv.style.display = "flex"
+        thirdDiv.style.flexDirection = "column"
+        thirdDiv.style.justifyContent = "center"
+        thirdDiv.style.alignItems = "center"
+    
+        let iconOfpressure=  document.createElement("img")
+        iconOfpressure.src = "./img/icons/pressure.png"
+        iconOfpressure.style.width = "40px";
+        iconOfpressure.style.boxShadow = "4px 8px rgba(0, 07, 0, 0.839), 0 6px 20px 0 rgba(237, 235, 235, 0.576)";
+      
+        let thirdLabelH2 = document.createElement("h2");
+        thirdLabelH2.innerHTML = "Pressure"
+        thirdLabelH2.style.backgroundColor = "grey";
+        thirdLabelH2.color = "grey";
+        thirdLabelH2.style.padding= "8px"
+        thirdLabelH2.style.border= "2px black solid"
+        thirdLabelH2.style.borderRadius = "50px";
+        let thirdValueH1 = document.createElement("h1");
+     
+        thirdValueH1.innerHTML = p.main.pressure+ "mb" ;
+        thirdDiv.appendChild(iconOfpressure);
+        thirdDiv.appendChild(thirdLabelH2);
+        thirdDiv.appendChild(thirdValueH1);
+
+
+        
+        // fourth div  -> speedOfWind 
+        let fourthDiv = document.createElement("div");
+        fourthDiv.style.display = "flex"
+        fourthDiv.style.flexDirection = "column"
+        fourthDiv.style.justifyContent = "center"
+        fourthDiv.style.alignItems = "center"
+    
+        let iconOfspeedOfWind =  document.createElement("img")
+        iconOfspeedOfWind .src = "./img/icons/wind.png"
+        iconOfspeedOfWind .style.width = "40px";
+        iconOfspeedOfWind.style.boxShadow = "4px 8px rgba(0, 07, 0, 0.839), 0 6px 20px 0 rgba(237, 235, 235, 0.576)";
+        let fourthLabelH2 = document.createElement("h2");
+        fourthLabelH2.innerHTML = "Wind speed ";
+        fourthLabelH2.style.backgroundColor = " rgba(40, 40, 42, 0.657)";
+        fourthLabelH2.style.padding= "8px" ; 
+        fourthLabelH2.style.border= "2px black solid" ; 
+        fourthLabelH2.style.borderRadius = "50px";
+        let fourthValueH1 = document.createElement("h1");
+        fourthValueH1.innerHTML = p.wind.speed + "km/h" ;
+        fourthDiv.appendChild(iconOfspeedOfWind );
+        fourthDiv.appendChild(fourthLabelH2);
+        fourthDiv.appendChild(fourthValueH1);
+
+
+
     weatherCardDiv.appendChild(firstDiv);
     weatherCardDiv.appendChild(secondDiv);
+    weatherCardDiv.appendChild(thirdDiv);
+    weatherCardDiv.appendChild(fourthDiv);
 
     mainWeatherDiv.appendChild(weatherCardDiv)
 

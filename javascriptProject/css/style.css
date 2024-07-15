@@ -16,6 +16,7 @@ body{
 .header{
     display: flex;
     flex-wrap: wrap;
+  
     width: auto;
     max-height: 10vh;
     justify-items: center;
@@ -25,7 +26,7 @@ body{
 
 .header img {
     width: 100%;
-    height: 10h;
+    height: 17.5vh;
     max-height: 20vh;
 }
 
@@ -33,12 +34,13 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 30 vh;
+    height: 30vh;
     color: antiquewhite;
     position: absolute;
-    background-color: rgba(36, 4, 4, 0.525);
+    background-color: rgba(9, 4, 47, 0.658);
     font-size: xx-large;
-
+    justify-content: center;
+    align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
@@ -48,7 +50,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+    
     
 }
 #clock-container::before{
@@ -62,6 +65,7 @@ body{
     inset: 0;
     z-index: -1;
     opacity: 0.1;
+   
 
 }
 #clock{
@@ -72,6 +76,8 @@ body{
     backdrop-filter: blur(5px);
     background-color: rgba(128, 128, 128, 0.098);
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.604), 0 6px 20px 0 rgba(255, 255, 255, 0.592);
+    
    
 }
 #myClick{
@@ -82,18 +88,10 @@ body{
 .slider{
     position: relative;
     width: 100%;
+    height:  150vh;
     background-color: transparent;
     margin-top: 100px;
     overflow: hidden ;
-/*     
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    max-height: 10vh;
-    justify-items: center;
-   align-items: center;
-   color: red;
-   background-color: aquamarine; */
 }
 .slide-show-title{
     width: 100%;
@@ -117,15 +115,32 @@ body{
 .btn{
     width: 70px;
     font-size:xx-large;
+    
 }
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.604), 0 6px 20px 0 rgba(255, 255, 255, 0.592);
+    
+}
+
+
 
 .slide-show-img{
     width: 50dvw;
     height: 60dvh;
+    transition: transform 0.001s ease;
+    cursor: zoom-IN;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.604), 0 6px 20px 0 rgba(255, 255, 255, 0.592);
 }
 img.displaySlide{
     display: block;
 }
+.slide-show-img:active {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    cursor: zoom-out;
+}
+
 /* ------------------------image with location, language and flag ----- */
 .country-card{
     display: flex;
@@ -142,11 +157,12 @@ img.displaySlide{
     justify-content: space-around;
     align-items: center;
     width: 50dvw;
-    background-color: rgb(105, 105, 146);
+    background-color: rgba(65, 65, 67, 0.925);
 }
 .flag{
     width: 50px;
     height: 30px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.639), 0 6px 20px 0 rgba(237, 235, 235, 0.576);
 }
 .icon{
     width:40px;
@@ -163,25 +179,84 @@ img.displaySlide{
 h6{
     font-size:medium;
 }
+/* ----------------weather-------------------- */
+#highlight{
+    background-color: rgba(40, 40, 42, 0.657);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.639), 0 6px 20px 0 rgba(237, 235, 235, 0.576);
+
+    
+}
+
 .weather{
     width: 100%;
-    margin-block: 50px;
+    margin-block: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:20px;
+    gap:40px;
 }
 .weather-card{
-    width: 400px;
+    width: 600px;
     min-height: 50px;
     display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(21, 24, 147);
+    background-color: rgba(57, 57, 74, 0.818);
     padding: 20px;
 }
+#label{
+    font-size: x-large;
+}
+#countries{
+    background-color: #434350cd; /* Green */
+    border: none;
+  
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    transition-duration: 0.1s;
+
+
+}
+#countries:hover{
+    cursor: pointer;
+    background-color: #15191e;
+    color: white;
+  
+}
+#clickbtn{
+  background-color: #1e4d7c; 
+  border: none;
+  border-radius: 4%;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#clickbtn:hover{
+    cursor: pointer;
+    background-color: #15191e;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.604), 0 6px 20px 0 rgba(255, 255, 255, 0.592);
+    
+}
+
 /* ------------------ Responsive design------------------ */
 
 @media (max-width: 560px) 
