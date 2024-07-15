@@ -259,6 +259,26 @@ h6{
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.604), 0 6px 20px 0 rgba(255, 255, 255, 0.592);
     
 }
+/* --------------------footer---------------------------------- */
+footer{padding: 15px;
+width: 100%;
+background: var(--dark-background);
+text-align: center;
+padding: var(--padding-small);
+}
+.social-icons a {
+margin: 0 0.5em;
+}
+.social-icons img {
+width: 24px;
+height: 24px;
+filter: invert(1);
+}
+footer p {
+margin-top: 1em;
+font-size: var(--font-size-smaller);
+color: #bbb;
+}
 
 /* ------------------ Responsive design------------------ */
 
