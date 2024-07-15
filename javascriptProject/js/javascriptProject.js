@@ -1,5 +1,8 @@
 let slideIndex = 0;
 let jsonFileContents; //[cont, con, ....]
+let isEgyptImgsShowed = false;
+let isGermanyImgsShowed = false;
+
 function updateClock(){
     const now = new Date();
     let hours = now.getHours();
@@ -62,15 +65,78 @@ function nextSlide() {
     updateImagesDisplay();
 }
 
-async function getCountryWeather() {
+// ------------------------------------------------mehre FOTO----------------------------------------
 
-        
+function ladeBilder(json,id) {
+    if(id == '#content'){
+       if(isEgyptImgsShowed){
+        return
+       }
+       else{
+        isEgyptImgsShowed = true
+       }
+    }
+
+
+    if(id == '#content2'){
+        if(isGermanyImgsShowed){
+            return
+           }
+           else{
+            isGermanyImgsShowed = true
+           }
+    }
+
+    let xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+       
+        if( xhr.readyState === 4  && xhr.status === 200 ) {
+            const obj = JSON.parse(xhr.responseText);
+            console.log(obj);
+            const arr = obj.country;
+            const frag = document.querySelector(id);
+            
+            for (let i of arr) {
+            let divi   = document.createElement('div');
+            let bild   = document.createElement('img');
+            let span   = document.createElement('span');
+
+            span.innerText = i.location;
+            bild.src       = i.map;
+
+            divi.append(span,bild);
+            frag.append(divi);
+            }
+        }
+    }
+
+    xhr.open('GET','extern/'+json,true);
+    xhr.send(null);
+}
+
+
+document.querySelector('#firstbtn').addEventListener('click', function() {
+    ladeBilder('Egypt.json','#content');
+});
+
+document.querySelector('#secondbtn').addEventListener('click', function() {
+    ladeBilder('Germany.json','#content2');
+});
+
+
+
+
+
+
+// ---------------------------------------------weather--------------------------------------------
+async function getCountryWeather() {
     let mainWeatherDiv = document.getElementById("weather-details");
     let child = mainWeatherDiv.lastElementChild;
     while (child) {
         mainWeatherDiv.removeChild(child);
         child = mainWeatherDiv.lastElementChild;
     }
+    
 
     let selectedCountry = document.getElementById("countries")
     let wetterUrl ="http://api.openweathermap.org/data/2.5/weather?q="+selectedCountry.value +"&appid=2cee41a74613123afb2c3027ee5d7434&units=metric"

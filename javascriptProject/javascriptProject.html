@@ -23,13 +23,39 @@
 			<div id="clock">00:00:00</div>
 			<!-- <button onclick="getLocation" id="myClick">Get location</button> -->
 		</div>
+		
+
+		<!-- ---------------------------------weather----------------------------------------------------- -->
+		
+		<div class="weather">
+			<h1 id="highlight">Discover the weather with us.</h1>
+			<div class="weather-search">
+				<label id="label" for="countries">Choose a country:</label>
+				<select name="countries" id="countries">
+				  <option value="Egypt">Egypt</option>
+				  <option value="Germany">Germany</option>
+				  <option value="Japan">Japan</option>
+				  <option value="France">France</option>
+				  <option value="USA">USA</option>
+				</select>
+				<button id="clickbtn" onclick="getCountryWeather()"> Get Weather</button>
+			</div>
+			<div id="weather-details" class="weather-details">
+
+			</div>
+		<!-- --------------------slider------------------------------ -->
+		</div>
 		<div class="slider">
 			<div id="slide-show" class="slides">
 				<div class="country-card">
 					<div class="slide-show-title">
-						<button class="btn" onclick="prevSlide()">&#10094</button>
+						<button class="btn" onclick="prevSlide()">
+							<div class="btnicon">&#10094</div>
+						</button>
 						<h1 id="country-name"></h1>
-						<button class="btn" onclick="nextSlide()">&#10095</button>
+						<button class="btn" onclick="nextSlide()">
+							<div class="btnicon">&#10095</div>
+						</button>
 					</div>
 
 					
@@ -51,31 +77,24 @@
 						<img class="flag" id="flag" src="">
 					</div>
 				</div>
-				<div class="btns">
-					
-				</div>
+
 			</div>
 
 		</div>
-		
-		<div class="weather">
-			<h1 id="highlight">Discover the weather with us.</h1>
-			<div class="weather-search">
-				<label id="label" for="countries">Choose a country:</label>
-				<select name="countries" id="countries">
-				  <option value="Egypt">Egypt</option>
-				  <option value="Germany">Germany</option>
-				  <option value="Japan">Japan</option>
-				  <option value="France">France</option>
-				  <option value="USA">USA</option>
-				</select>
-				<button id="clickbtn" onclick="getCountryWeather()"> Get Weather</button>
-			</div>
-			<div id="weather-details" class="weather-details">
 
-			</div>
-		
+
+		<!-- ---------------------------------------mehere Foto---------------------------------- -->
+		<div class="buttons">
+			<button id="firstbtn">More Photos of Egypt</button>
+			<button id="secondbtn">More Photos of germany</button>
 		</div>
+		<div class="wrapper">
+			<section id="content"></section>
+			<section id="content2"></section>
+		</div>
+		
+	
+
 		<footer>
 			<div class="social-icons">
 				<a href="#"><img src="./img/fb.png" alt="Facebook"></a>

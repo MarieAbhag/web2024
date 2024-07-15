@@ -1,0 +1,14 @@
+{
+    
+"country":[
+        { "location":"1.", "map":"./img/Egypt/1.jpeg" },
+        { "location":"2.", "map":"./img/Egypt/2.jpeg" },
+        { "location":"3.", "map":"./img/Egypt/3.jpeg" },
+        { "location":"4.", "map":"./img/Egypt/4.jpeg" },
+        { "location":"5.", "map":"./img/Egypt/5.jpeg" },
+        { "location":"6.", "map":"./img/Egypt/6.jpeg" }
+        
+    ]
+}
+
+

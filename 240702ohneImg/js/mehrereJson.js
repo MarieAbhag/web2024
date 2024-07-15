@@ -36,18 +36,3 @@ document.querySelector('#eins').addEventListener('click', function() {
 document.querySelector('#zwei').addEventListener('click', function() {
     ladeBilder('woche2.json','#content2');
 });
-
-// objekte auslesen
-// kurs.title
-// oder 
-// let vari = 'geschenkt';
-// kurs[vari];
-
-let text = employees[
-firstName="John",lastName="Doe",
-firstName="John",lastName="Doe",
-firstName="John",lastName="Doe"
-]
-
-document.getElementById("demo").innerHTML =
-employees[0].firstName + " " + employees[0].lastName;

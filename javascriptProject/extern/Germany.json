@@ -1,0 +1,12 @@
+{
+    
+"country":[
+        { "location":"1.", "map":"./img/Germany/1.jpeg" },
+        { "location":"2.", "map":"./img/Germany/2.jpeg" },
+        { "location":"3.", "map":"./img/Germany/3.jpeg" },
+        { "location":"4.", "map":"./img/Germany/4.jpeg" },
+        { "location":"5.", "map":"./img/Germany/5.jpeg" },
+        { "location":"6.", "map":"./img/Germany/6.jpeg" }
+    ]
+}
+
