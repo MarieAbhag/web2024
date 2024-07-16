@@ -1,0 +1,30 @@
+{
+    "einfach":"klasse",
+    "spitze":"so eine wiederholung",
+    "single":{
+        "location":"kollerinsel",
+        "map":"img/vier.png"
+    },
+
+    "ereignisse":[
+        {
+            "location":"kollerinsel",
+            "map":"img/vier.png",
+            "rating":"3",
+            "photoshp":"neu"
+        },
+        {
+            "location":"otterstädter altrhein",
+            "map":"img/fuenf.png",
+            "rating":"4",
+            "photoshp":"neu"
+        },
+        {
+            "location":"friesenheimer insel",
+            "map":"img/sechs.png",
+            "denPfad":"ausgehend von der htmlDatei",
+            "rating":"5",
+            "photoshp":"neu"
+        }
+    ]
+}

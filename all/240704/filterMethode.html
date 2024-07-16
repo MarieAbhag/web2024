@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>filterMethode</title>
+
+	</head>
+
+
+	<body>
+
+		<p>array.forEach(function(currentValue, index, arr), thisValue)</p>
+		<p>array.filter ( function(currentValue, index, arr), thisValue )</p>
+		<p>verpflichtend - currentValue</p>
+		<p>optional - index,arr</p>
+
+		<script>
+			function checkLarge (num) {
+				return num > 100;
+			}
+
+		const num = [100, 245, 57, 118];
+		const newArr = num.filter (checkLarge);
+		// newArr = [245,118];
+		console.log (newArr);
+
+			// ----------variante mit arrowFunction--------------------
+
+			const numer = [111, 245, 57, 118];
+			const large = numer.filter ((elem) => elem > 100);
+			console.log(large);
+
+
+
+
+
+
+
+		function summe (a,b) {
+			return a + b;
+			
+		}
+
+		let aufrufer = summe(1,2);
+		console.log(aufrufer);
+
+
+
+		</script>
+
+	</body>
+</html>

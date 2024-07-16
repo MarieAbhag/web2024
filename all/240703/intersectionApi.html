@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>intersectionApi</title>
+		<style>
+			.jade-scale {
+				width:100px;
+				height: 100px;
+				background-color: lightblue;
+				border:2px solid blue;
+				margin-top:50px;
+				margin-bottom: 400px;
+				margin-left: 200px;
+				transition:transform 5s ease;
+				transform: scale(1);
+			}
+
+			/* sobald das div die class erhält skaliere um 1.8fach */
+			.jade-scale.image-scaling {
+				transform: scale(1.8);
+			}
+		</style>
+	</head>
+
+
+	<body>
+
+		<div class="jade-scale"></div>
+		<div class="jade-scale"></div>
+		<div class="jade-scale"></div>
+
+		<script>
+			const jadeScale = document.querySelectorAll('.jade-scale');
+			const options = { rootMargin:"-250px" }   //entweder in px oder prozent
+			const jadeScaleObserver = new IntersectionObserver(function(entries,options){
+				entries.forEach(function(entry){
+					if(entry.isIntersecting) {
+						entry.target.classList.add('image-scaling');
+					}else{
+						entry.target.classList.remove('image-scaling');
+					}
+				})
+			}, options);
+
+			jadeScale.forEach(function(jadeScale){
+				jadeScaleObserver.observe(jadeScale);
+			});
+
+			//wenn das jeweilige entry nicht mehr observed werden soll kann man das mit unobserve entfernen
+				// if (entry.isIntersecting) {
+				// 	loadFile (entry)
+				// 	observer.unobserve(entry.target)
+				// }
+		</script>
+	</body>
+</html>
